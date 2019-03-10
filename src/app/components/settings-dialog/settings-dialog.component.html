@@ -1,0 +1,28 @@
+<div class="settingsDiv">
+
+               
+  <img class="closeSettingsBtn" (click)="closeSettings()" src=".././assets/0566-zoom-out2.png">
+
+
+<div class="innerFrame">
+                           <!--left side cchild right side property of parent--> 
+  <app-settings-check-box [checkBoxName]="checkBoxNameGeo" [checkBoxState]="geo" (valueChange)="changeGeo($event)" ></app-settings-check-box>
+  <app-settings-check-box  [checkBoxName]="checkBoxNameLoc" [checkBoxState]="fence" (valueChange)=" changefence($event)" ></app-settings-check-box>
+
+<hr>
+
+<app-settings-check-box  [checkBoxName]="checkBoxNameClusterSurrname" [checkBoxState]="cluster" (valueChange)=" changeClusterSurrname($event)" ></app-settings-check-box>
+
+<hr>
+
+Build 1.3 b <br>
+Date 11.03.2019<br>
+Developer: Gregor Hubrich<br>
+
+
+</div>
+
+
+
+ 
+</div>

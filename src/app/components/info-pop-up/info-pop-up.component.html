@@ -1,0 +1,43 @@
+<div  class="infoDiv">
+                        
+  <img class="infoCloseBtn" (click)="closeInfo()" src=".././assets/0566-zoom-out2.png">
+  <img [hidden]="expandetInfoIsHidden" (click)="switchexpandetInfoIsHidden()"  class="backToListBtn" src=".././assets/leftBtn.png">
+
+<div [hidden]="!expandetInfoIsHidden" class="listBarFrame">
+  
+
+<div *ngFor="let item of localSelectedMarker"  class="listBar" (click)="switchexpandetInfoIsHidden()"  >
+
+
+
+  <div  (click)="selectExtendetInfo(item)" > {{item.nameForDisplay}}    </div>
+
+
+  <div class="distText" > {{item.distance}} m </div>  
+
+</div>
+
+
+
+</div> 
+
+<div *ngIf="!expandetInfoIsHidden" class="listBarFrame" >
+
+  <div class="header">Name:</div>
+  <div class="textSection" >
+{{expandetInfoMarker.nameForDisplay}}
+</div>
+<div class="header">Beschreibung:</div>
+<div class="textSection" >
+  
+ {{description}}
+    </div>
+
+
+</div>
+
+
+
+</div>
+
+

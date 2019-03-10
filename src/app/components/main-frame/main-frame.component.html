@@ -1,0 +1,32 @@
+
+
+
+<div class="topBar">
+
+
+  <div class="topTitle" >
+      
+      {{toptext}}
+     </div>
+  
+  
+  <div class="menuBtnFrame" (click)="switchSettingsDisplay()" > 
+  
+      <div class="menuBtn" ></div>
+      <div class="menuBtn" ></div>
+      <div class="menuBtn" ></div>
+  
+  </div>
+  
+  
+  
+  </div>
+
+ <div class="maincontainer">
+
+<app-map-dialog [hidden]="mapIsHidden"  ></app-map-dialog>
+
+<app-settings-dialog [hidden]="settingsIsHidden"  ></app-settings-dialog>
+
+<app-info-pop-up [hidden]="InfoPopUpIsHidde"  ></app-info-pop-up>
+</div> 
