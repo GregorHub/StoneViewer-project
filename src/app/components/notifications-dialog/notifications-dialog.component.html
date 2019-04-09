@@ -1,0 +1,17 @@
+<div class="settingsDiv">
+
+               
+
+
+  <img  class="closeSettingsBtn" (click)="closeNotifications()" src=".././assets/0566-zoom-out2.png">
+
+
+<div class="innerFrame">
+
+  
+  <div *ngIf="MyMarkers.length==0" > noch keine Neuigkeiten verfügbar</div>
+  <div *ngFor=" let item of MyMarkers" (click)="showOnMap(item)" >name:  {{item.nameForDisplay}} <br> entfernung:{{item.distance}} m   <hr> </div>
+  
+
+
+</div>

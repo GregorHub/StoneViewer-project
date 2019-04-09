@@ -6,14 +6,14 @@
 <div [hidden]="!expandetInfoIsHidden" class="listBarFrame">
   
 
-<div *ngFor="let item of localSelectedMarker"  class="listBar" (click)="switchexpandetInfoIsHidden()"  >
+<div *ngFor="let item of localSelectedMarker;let i = index"  class="listBar" (click)="switchexpandetInfoIsHidden()"  (click)="selectExtendetInfo(item)" >
 
 
 
   <div  (click)="selectExtendetInfo(item)" > {{item.nameForDisplay}}    </div>
 
 
-  <div class="distText" > {{item.distance}} m </div>  
+  <div class="distText" *ngIf="this.DsiplaySum" > {{editedDistance[i]}}  </div>  
 
 </div>
 
@@ -21,22 +21,46 @@
 
 </div> 
 
-<div *ngIf="!expandetInfoIsHidden" class="listBarFrame" >
+<div  *ngIf="!expandetInfoIsHidden" class="listBarFrame" >
+  <img [hidden]="picIsBig" *ngIf="expandPictureSrc!==''" class="stonePic" [src]="safePic()" (click)="switchPicIsBig()"/>
+  <img [hidden]="!picIsBig" *ngIf="expandPictureSrc!==''" class="stonePicBig" [src]="safePic()"  (click)="switchPicIsBig()"  />
 
+
+  <div class="innerFrame" [hidden]="picIsBig"  >
   <div class="header">Name:</div>
   <div class="textSection" >
-{{expandetInfoMarker.nameForDisplay}}
+{{expandetInfoMarker.nameForDisplay}}  
+
+
 </div>
-<div class="header">Beschreibung:</div>
+<div class="header"></div>
 <div class="textSection" >
+  Entfernung: {{expandetInfoMarker.distance}}m
+</div>
+
+
+
+<div class="textSection" *ngIf="wikiInsc!=''" >
+  Inschrift: {{wikiInsc}}
+</div>
+
+
+<div *ngIf="description!=undefinded" class="header">Beschreibung:</div>
+<div  *ngIf="description!=undefinded"  class="textSection" >
   
  {{description}}
+
     </div>
 
 
+
+
+<span class="showOnMap"  (click)="showOnMap()" >auf karte anzeigen</span>
+
+
 </div>
 
-
+</div>
 
 </div>
 

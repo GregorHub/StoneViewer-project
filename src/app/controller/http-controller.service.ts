@@ -9,18 +9,25 @@ import 'rxjs/add/operator/map';
 import { longStackSupport } from 'q';
 import { last } from 'rxjs-compat/operator/last';
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class HttpControllerService  {
  
-  constructor( private http:Http) { }
+  constructor( private http:Http) {
+
+    /**
+    this.http.get('/assets/test.txt').subscribe(data => {
+      console.log(data.text());
+  }) */
+
+   }
 
   getOsmData(url):Observable<any>{
     return this.http.get(url)
     .map((response:Response)=>{const result = response.json();  return result; })
-    .catch((error : Response | any) => {  return Observable.throw(error.statusText);      });
+    .catch((error : Response | any) => {  return Observable.throw(error.statusText);    
+      });
   }
 
 
@@ -29,15 +36,13 @@ export class HttpControllerService  {
 getWikiData(url):Observable<any>{
   return this.http.get(url)
   .map((response:Response)=>{const result = response.json().results.bindings
-
-
-    
+   // console.log(result)
     return result; })
-  .catch((error : Response | any) => {  return Observable.throw(error.statusText);      });
-
-
-
+  .catch((error : Response | any) => {  return Observable.throw(error.statusText);    
+   });
 }
+
+
 
 
 

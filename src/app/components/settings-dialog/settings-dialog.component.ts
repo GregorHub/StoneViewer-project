@@ -3,6 +3,10 @@ import { MainFrameComponent } from '../main-frame/main-frame.component';
 import { GeolocationSettings } from 'src/app/controller/Settings/geolocation-settings';
 import { GeofencingnSettings } from 'src/app/controller/Settings/geofencingn-settings';
 import { clusterSurnameSettings } from 'src/app/controller/Settings/clusterSurname-settings';
+import { DataComponent } from 'src/app/controller/data/data.component';
+
+
+
 
 
 
@@ -13,38 +17,60 @@ import { clusterSurnameSettings } from 'src/app/controller/Settings/clusterSurna
 })
 export class SettingsDialogComponent implements OnInit {
 
-  constructor(private _mainFrameComponent: MainFrameComponent , private _geolocation:GeolocationSettings , private _geofencing: GeofencingnSettings,private _clusterSurnameSettings:clusterSurnameSettings ) { }
+geo:boolean=false;
+fenceDist:number;
+notification:boolean=false;
+cluster;
 
-  
+  constructor(private _mainFrameComponent: MainFrameComponent, private _DataComponent: DataComponent , private _geolocation:GeolocationSettings , private _geofencing: GeofencingnSettings,private _clusterSurnameSettings:clusterSurnameSettings ) {
+
+   }
+
 
  
   checkBoxNameGeo="Geolocation"
-  checkBoxNameClusterSurrname="Cluster Nachname"
-  checkBoxNameLoc="test2"
+  checkBoxNameFence="Geofencing"
+  checkBoxNameNote="Benachrichtigungen"
 
-geo= this._geolocation.$geolocation
-fence=this._geofencing.$geofencing
-cluster=this._clusterSurnameSettings.$clusterSurname
   ngOnInit() {
- 
-   
+          
+    this._DataComponent.cast_geofencingIsActivated.subscribe(data=>{this.fenceDist=data})
+
+    this._DataComponent.cast_geopositionIsActivated.subscribe(data=>{this.geo=data})
+
+    this._DataComponent.cast_notificationnIsActivated.subscribe(data=>{this.notification=data})
+
   }
 
+  returnSlide(){
+     
+     var a=(<HTMLInputElement>document.getElementById("myRange")).value;
+     this.fenceDist=parseInt(  a)
+
+     this._DataComponent.editGeofencingIsActivated(a)
+
+  }
 
   closeSettings(){
     this._mainFrameComponent.switchSettingsDisplay()
+
   }
 
   changeGeo($event){
-    this._geolocation=$event
+    this._DataComponent.editGeopositionIsActivated($event)
+  
   }
 
-  changefence($event){
-    this._geofencing=$event
-  }
+
 
   changeClusterSurrname($event){
 this._clusterSurnameSettings=$event
   }
 
+changeNotification($event){
+  this._DataComponent.editNotificationIsActivated($event)
 }
+
+}
+
+

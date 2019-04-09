@@ -1,6 +1,8 @@
+
+
 export class GeolocationSettings {
 
-
+constructor(){}
 
     /**
      * Getter $geolocation

@@ -1,0 +1,19 @@
+
+    <span *ngIf="localSelectedMarker.distance>=1" >
+<div *ngIf="selcted"   class="mapDiv" (click)="setView()">
+
+
+            Nächster Stolperstein in:
+        {{markerDist}}m
+
+
+</div>
+</span>
+
+
+<img *ngIf="!selcted" class="infoCloseBtn"  (click)="closeSelcted()" src=".././assets/0566-zoom-out2.png">
+<div *ngIf="!selcted" class="mapDiv2" (click)="setSelctedView()">
+       
+
+    {{localChosenMarker.nameForDisplay +" "}}     {{localChosenMarker.distance}}m
+ </div>

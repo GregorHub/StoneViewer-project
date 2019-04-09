@@ -1,10 +1,22 @@
+import { BehaviorSubject } from "rxjs";
+
 export class Geoposition {
+
+
+
+    MyPos=new BehaviorSubject <any>(this.$geolocationPosition)
+    cast_MyPos=this.MyPos.asObservable()
+
+
+MyPosIsBlocked:boolean=false;
+
 
     /**
      * Getter $geolocationPosition
      * @return {Position}
      */
 	public get $geolocationPosition(): Position {
+        this.fetchPositon()
 		return this.geolocationPosition;
 	}
 
@@ -17,19 +29,39 @@ export class Geoposition {
 	}
     private geolocationPosition
 
-    constructor(){
+    constructor(  ){
+
+
+        this.fetchPositon()
+
+     
+
+}
+
+
+
+private askedOnce=false;
+
+fetchPositon(){
     if (window.navigator && window.navigator.geolocation) {
         window.navigator.geolocation.getCurrentPosition(
             position => {
-              
-                this.geolocationPosition = position,
-                    console.log(position)
+                this.MyPosIsBlocked=false;
+                this.geolocationPosition = position
+            
             },
             error => {
                 switch (error.code) {
                     case 1:
                         console.log('Permission Denied');
-                        break;
+                        this.MyPosIsBlocked=true;
+                        if(this.askedOnce==false){
+                        if (confirm('Permission Denied to use Geolocation!')) {
+                            this.askedOnce=true
+                        } else {
+                            // Do nothing!
+                        }}
+
                     case 2:
                         console.log('Position Unavailable');
                         break;
@@ -37,8 +69,12 @@ export class Geoposition {
                         console.log('Timeout');
                         break;
                 }
-            }
+
+                this.geolocationPosition=undefined
+            } ,
+            {  enableHighAccuracy: true }
         );
     };
+}
+}
 
-}}

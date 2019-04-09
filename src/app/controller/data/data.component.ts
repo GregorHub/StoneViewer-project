@@ -1,20 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpControllerService } from '../http-controller.service';
-import { Subscription } from 'rxjs';
-import { Config } from 'protractor';
-import { HttpClientModule } from '@angular/common/http';
-import { observable, Observable } from 'rxjs';
-import { HttpModule, Http } from '@angular/http';
-import { Response, RequestOptions,Headers } from '@angular/http'
 import { BehaviorSubject } from 'rxjs';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
-import { MapDialogComponent } from 'src/app/components/map-dialog/map-dialog.component';
 import { marker } from '../marker';
 import { hasOwnProperty } from 'q';
-import { mapToExpression } from '@angular/compiler/src/render3/view/util';
-import { allowSanitizationBypass } from '@angular/core/src/sanitization/bypass';
 import { Geoposition } from '../geoFunctions/geoposition';
+import { view } from '../Settings/view';
+
 declare let L;
 @Component({
   selector: 'app-data',
@@ -23,10 +16,39 @@ declare let L;
 })
 export class DataComponent  {
 
- allFetchedData:marker[]=[]
+  //    49.9066     8.12649
+ 
   oldBounds;
 
-constructor(private _HttpControllerService : HttpControllerService, private _geoposition: Geoposition ) { }
+
+testStadeckn:marker[]=[
+/*
+  { lat:8.126496,
+    lan:49.906687,
+    name:"testdaten",
+  nameForDisplay:"testdaten",
+  osmMeta:{},
+  wikiDataMeta:{},
+  type:"OSM",
+  distance:0
+   },
+   { lat:8.126353,
+    lan:49.907111,
+    name:"testdaten",
+  nameForDisplay:"testdaten",
+  osmMeta:{},
+  wikiDataMeta:{},
+  type:"OSM",
+  distance:0
+   }*/
+]
+
+
+allFetchedData:marker[]=this.testStadeckn
+
+
+
+constructor(private _HttpControllerService : HttpControllerService, private _geoposition: Geoposition  ) { }
 
 
 /**
@@ -37,11 +59,12 @@ constructor(private _HttpControllerService : HttpControllerService, private _geo
  * 
  */
 
-storeEveryData:marker[]=[]
+storeEveryData:marker[]=this.testStadeckn
 
 reciveNewData(markerList:marker[]){
 
-  console.log(this._geoposition.$geolocationPosition )
+
+  //console.log(this._geoposition.$geolocationPosition )
 
 
   markerList.forEach(element => {
@@ -112,7 +135,7 @@ var single=[]
  
      });
 
-merge.sort(function (a,b){ return a.lan - b.lan})
+ merge.sort(function (a,b){ return a.lan - b.lan})
 
 //console.log(merge)
   for(var i =0 ;i<merge.length-1;i++){
@@ -155,9 +178,14 @@ this.storeEveryData=this.calcDist(this.storeEveryData)
 }
 
 
-calcDist(markerList:marker[]){
 
+calcDist(markerList:marker[]){
+  var geopositionIsAllowed:boolean;
+  this.cast_geopositionIsActivated.subscribe(data=>geopositionIsAllowed=data)
+  if(this._geoposition.$geolocationPosition!==undefined && geopositionIsAllowed ){
+   // console.log(geopositionIsAllowed)
   var A=L.latLng(this._geoposition.$geolocationPosition.coords.longitude ,this._geoposition.$geolocationPosition.coords.latitude);
+
 
   markerList.forEach(element => {
 
@@ -165,41 +193,96 @@ calcDist(markerList:marker[]){
 
     var B={latlng:{lat:element.lat,lng:element.lan}}
   
+
     var _distance = A.distanceTo(B.latlng)
 
 
     element.distance= Math.round(_distance)
+
+    if(element.distance<600){
+      ///console.log(element)
+    }
   });
   
 
-
+  }
   return markerList
 }
 
 /**
- * list with all recived data
+ * =========================================================================================================
+ * Observables
  */
 allMarkerList= new BehaviorSubject <marker[]>([])
 cast_allMarkerList=this.allMarkerList.asObservable();
-
 editAllMarkerList(newAllMarkerList){
 this.allMarkerList.next(newAllMarkerList)
-
 }
-
-
-
 
 
 selectedMarkerList=new BehaviorSubject <marker[]>([])
 cast_selectedMarkerList=this.selectedMarkerList.asObservable()
-
 editSelectedMarkerlist(newSelectedMarkerList){
   this.selectedMarkerList.next(newSelectedMarkerList)
 }
 
 
-fetchOsmShit(bounds){
+switchView=new BehaviorSubject <view>({lanlat:[0,0],zoom:1})
+cast_switchView=this.switchView.asObservable()
+editSwitchView(newView:view){
+    this.switchView.next(newView)
+}
+
+
+selectedMarkerforObservation=new BehaviorSubject <marker>(  { lat:0,    lan:0,    name:"test",  nameForDisplay:"",  osmMeta:{},  wikiDataMeta:{},  type:"",  distance:-1   },)
+cast_selectedMarkerforObservation=this.selectedMarkerforObservation.asObservable()
+editSelectedMarkerforObservation(newMarker){
+
+  this.selectedMarkerforObservation.next(newMarker)
+  
+}
+
+selectedMarker=new BehaviorSubject <marker>(  { lat:0,    lan:0,    name:"LocalChoosen",  nameForDisplay:"",  osmMeta:{},  wikiDataMeta:{},  type:"",  distance:-1  },)
+cast_selectedMarker=this.selectedMarker.asObservable()
+editSelectedMarker(newMarker){
+
+  this.selectedMarker.next(newMarker)
+  
+}
+
+
+
+
+/**
+ * =========================================================================================================
+ * Settings Observables
+ */
+
+
+geofencingRadarDist= new BehaviorSubject <number>(100)
+cast_geofencingIsActivated= this.geofencingRadarDist.asObservable()
+editGeofencingIsActivated(newDist){
+this.geofencingRadarDist.next(newDist)
+}
+
+geopositionIsActivated= new BehaviorSubject <boolean>(true)
+cast_geopositionIsActivated= this.geopositionIsActivated.asObservable()
+editGeopositionIsActivated(newState){
+this.geopositionIsActivated.next(newState)
+console.log(newState)
+}
+
+notificationIsActivated= new BehaviorSubject <boolean>(true)
+cast_notificationnIsActivated= this.notificationIsActivated.asObservable()
+editNotificationIsActivated(newState){
+this.notificationIsActivated.next(newState)
+}
+
+
+
+//===========================================================================================================
+
+fetchOsm(bounds){
 
     //this.optimzeOSMbounds(bounds)
     this._HttpControllerService.getOsmData(this.createOSMquery(bounds)).subscribe(data => {   
@@ -230,25 +313,19 @@ fetchOsmShit(bounds){
  
   }
 
+
 createOSMquery(bounds){
-    var url
-    var overpassQuery = 'memorial:type'
-    var overpassQueryVal ='stolperstein'
-    //var bounds="49.98713158352021,8.254444599151613,49.99729846830156,8.274614810943605"
-    //var bounds="49.97,8.18,50.02,8.27" //get bounds from map
-
-
+    var url:string;
+    var overpassQuery:string = 'memorial:type'
+    var overpassQueryVal:string ='stolperstein'
+                     
     var nodeQuery = 'node[' + (overpassQueryVal==""?overpassQuery:"'"+overpassQuery+"'='"+overpassQueryVal+"'") + '](' + bounds + ');';
     var wayQuery = 'way[' + (overpassQueryVal==""?overpassQuery:"'"+overpassQuery+"'='"+overpassQueryVal+"'") + '](' + bounds + ');';
     var relationQuery = 'relation[' + (overpassQueryVal==""?overpassQuery:"'"+overpassQuery+"'='"+overpassQueryVal+"'") + '](' + bounds + ');';
     var query = '?data=[out:json][timeout:15];(' + nodeQuery + wayQuery + relationQuery + ');out%20geom;';
     var baseUrl = 'https://overpass-api.de/api/interpreter';
-    var resultUrl = baseUrl + query;
-    url=resultUrl
-
-
-
-
+    var url = baseUrl + query;
+   
     return url
 
   }
@@ -289,6 +366,7 @@ fetchWikidata(width,point){
      var lng:number= parseFloat(pointAsString[1])
 
      var newMarker:marker={name:element.item.value,lat:lat,lan:lng,type:"Wiki",wikiDataMeta:element,osmMeta:{},  nameForDisplay:"",   distance:0 }
+          
 
      newMarkerList.push(newMarker)
       });
@@ -310,9 +388,11 @@ var query = [ "PREFIX bd: <http://www.bigdata.com/rdf#>\n",
  "PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n",
  "PREFIX wd: <http://www.wikidata.org/entity/>\n",
  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n",
- "SELECT ?item ?itemLabel ?location ?rel ?relLabel ?val ?valLabel  WHERE\n",
+ "SELECT ?item ?itemLabel ?location ?rel ?relLabel ?val ?valLabel ?pic ?monument   WHERE\n",
  "{\n",
   " ?item wdt:P31 wd:Q26703203 . \n",
+  "?item wdt:P18 ?pic .",
+  "?item wdt:P1684 ?monument .",
  "SERVICE wikibase:around { 	\n",
   " ?item wdt:P625  ?location .\n",
    "bd:serviceParam wikibase:center \"Point("+coord.lng+" "+coord.lat+")\"^^geo:wktLiteral. \n",
@@ -349,7 +429,7 @@ var YQ2=parseFloat(BoundArray[1])
 var XP2=parseFloat(BoundArray[2])
 var YP2=parseFloat(BoundArray[3])
 
-console.log("triggert")
+//console.log("triggert")
  if( XQ1<XQ2 && XQ2<XP1 && YQ1<YQ2 && YQ2<YP1   ){
 
   console.log("fall 1")
@@ -360,6 +440,9 @@ console.log("triggert")
 
 
 }
+
+
+
 
 
 

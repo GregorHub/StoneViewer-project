@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HttpClientModule, HttpRequest} from '@angular/common/http';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import {HttpClientModule} from '@angular/common/http';
+import {ServiceWorkerModule,   SwUpdate,  SwPush} from '@angular/service-worker';
 import { environment } from '../environments/environment';
 //import { Observable, BehaviorSubject } from 'rxjs';
 import { MainFrameComponent } from './components/main-frame/main-frame.component';
@@ -16,12 +16,13 @@ import{FormsModule}  from '@angular/forms';
 import { GeolocationSettings } from './controller/Settings/geolocation-settings';
 import { GeofencingnSettings } from './controller/Settings/geofencingn-settings';
 import { Geoposition } from './controller/geoFunctions/geoposition';
-import { DataControllerService } from './controller/data-controller.service';
-import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { DataComponent } from './controller/data/data.component';
 import { HttpControllerService } from './controller/http-controller.service';
 import { clusterSurnameSettings } from './controller/Settings/clusterSurname-settings';
 import { Geofencing } from './controller/geoFunctions/geoFencing';
+import { NotificationsDialogComponent } from './components/notifications-dialog/notifications-dialog.component';
+import { PushNotificationsService } from './controller/push-notifications.service';
+import { InfoDashBoardComponent } from './components/info-dash-board/info-dash-board.component';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import { Geofencing } from './controller/geoFunctions/geoFencing';
     InfoPopUpComponent,
     SettingsCheckBoxComponent,
     DataComponent,
+    NotificationsDialogComponent,
+    InfoDashBoardComponent,
 
 
   ],
@@ -44,9 +47,27 @@ import { Geofencing } from './controller/geoFunctions/geoFencing';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    
 
   ],
-  providers: [GeolocationSettings,GeofencingnSettings,Geoposition,clusterSurnameSettings,DataComponent,HttpControllerService,MapDialogComponent,MainFrameComponent,Geofencing],
+  providers: [PushNotificationsService,InfoPopUpComponent ,GeolocationSettings,GeofencingnSettings,Geoposition,clusterSurnameSettings,DataComponent,HttpControllerService,MapDialogComponent,MainFrameComponent,Geofencing, NotificationsDialogComponent ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+constructor(update: SwUpdate){
+
+update.available.subscribe(update =>{
+  console.log(update)
+
+  if (confirm("Update?") ){
+    window.location.reload()
+} else {
+    // Do nothing!
+}
+
+})
+
+
+
+}}
