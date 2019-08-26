@@ -1,0 +1,4087 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "c:\\ANgularDevelopmentLab\\StoneViewer",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2019-04-12 09:50:30",
+            "filesum": 220,
+            "codesum": 19906,
+            "commentsum": 3420,
+            "blanksum": 1542,
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": ".editorconfig"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 20,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 7,
+                    "code": 135,
+                    "comment": 0,
+                    "filename": "angular.json"
+                },
+                {
+                    "blank": 79,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\3rdpartylicenses.txt"
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\wicket.js"
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\main.ace75adc0679b9f2c25d.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\manifest.webmanifest"
+                },
+                {
+                    "blank": 21,
+                    "code": 1758,
+                    "comment": 907,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\ngsw-worker.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 75,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\ngsw.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\polyfills.3eb7881d3a00da6c675e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\runtime.a5dd35324ddfd942bef1.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\safety-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\styles.7e69e535420df75d922b.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\worker-basic.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.e2e-spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.e2e-spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.po.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.po.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app-routing.module.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app-routing.module.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 74,
+                    "comment": 4,
+                    "filename": "dist\\out-tsc\\src\\app\\app.module.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.module.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 70,
+                    "comment": 2,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 154,
+                    "comment": 10,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 82,
+                    "comment": 11,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 191,
+                    "comment": 14,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 80,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 62,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 298,
+                    "comment": 47,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 33,
+                    "comment": 4,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoFencing.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoFencing.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 53,
+                    "comment": 10,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoposition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoposition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 7,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\marker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\marker.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\clusterSurname-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\clusterSurname-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geofencingn-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geofencingn-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geolocation-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geolocation-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\view.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\view.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 12,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.prod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.prod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\main.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\main.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 69,
+                    "filename": "dist\\out-tsc\\src\\polyfills.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\polyfills.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 5,
+                    "filename": "dist\\out-tsc\\src\\test.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\test.js.map"
+                },
+                {
+                    "blank": 79,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "dist\\StoneViewer\\3rdpartylicenses.txt"
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "dist\\StoneViewer\\assets\\wicket.js"
+                },
+                {
+                    "filename": "dist\\StoneViewer\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "dist\\StoneViewer\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\main.ace75adc0679b9f2c25d.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\manifest.webmanifest"
+                },
+                {
+                    "blank": 21,
+                    "code": 1758,
+                    "comment": 907,
+                    "filename": "dist\\StoneViewer\\ngsw-worker.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 75,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\ngsw.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\polyfills.3eb7881d3a00da6c675e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\runtime.a5dd35324ddfd942bef1.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\StoneViewer\\safety-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\styles.7e69e535420df75d922b.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\StoneViewer\\worker-basic.min.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 23,
+                    "comment": 2,
+                    "filename": "e2e\\protractor.conf.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "e2e\\src\\app.e2e-spec.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "e2e\\src\\app.po.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "e2e\\tsconfig.e2e.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "ngsw-config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 10141,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 52,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 13,
+                    "code": 14,
+                    "comment": 5,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\app\\app-routing.module.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.sass"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.ts"
+                },
+                {
+                    "blank": 13,
+                    "code": 58,
+                    "comment": 3,
+                    "filename": "src\\app\\app.module.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.spec.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 59,
+                    "comment": 1,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.ts"
+                },
+                {
+                    "blank": 35,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.html"
+                },
+                {
+                    "blank": 16,
+                    "code": 98,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.spec.ts"
+                },
+                {
+                    "blank": 65,
+                    "code": 124,
+                    "comment": 9,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.html"
+                },
+                {
+                    "blank": 12,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 58,
+                    "comment": 10,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 88,
+                    "code": 177,
+                    "comment": 13,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.ts"
+                },
+                {
+                    "blank": 11,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 78,
+                    "code": 84,
+                    "comment": 9,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 38,
+                    "comment": 60,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.ts"
+                },
+                {
+                    "blank": 15,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.html"
+                },
+                {
+                    "blank": 4,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 32,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.spec.ts"
+                },
+                {
+                    "blank": 156,
+                    "code": 256,
+                    "comment": 65,
+                    "filename": "src\\app\\controller\\data\\data.component.ts"
+                },
+                {
+                    "blank": 26,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\geoFunctions\\geoFencing.ts"
+                },
+                {
+                    "blank": 23,
+                    "code": 48,
+                    "comment": 9,
+                    "filename": "src\\app\\controller\\geoFunctions\\geoposition.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\http-controller.service.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 29,
+                    "comment": 6,
+                    "filename": "src\\app\\controller\\http-controller.service.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\marker.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\push-notifications.service.spec.ts"
+                },
+                {
+                    "blank": 16,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "src\\app\\controller\\push-notifications.service.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\pwa-service.service.spec.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\pwa-service.service.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\clusterSurname-settings.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\geofencingn-settings.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\geolocation-settings.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\Settings\\view.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\assets\\.gitkeep"
+                },
+                {
+                    "filename": "src\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "src\\assets\\wicket.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "src\\browserslist"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\environments\\environment.prod.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "src\\environments\\environment.ts"
+                },
+                {
+                    "filename": "src\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "src\\index.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 28,
+                    "comment": 3,
+                    "filename": "src\\karma.conf.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "src\\manifest.webmanifest"
+                },
+                {
+                    "blank": 12,
+                    "code": 1,
+                    "comment": 68,
+                    "filename": "src\\polyfills.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "src\\styles.sass"
+                },
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 4,
+                    "filename": "src\\test.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\tsconfig.app.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\tsconfig.spec.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\tslint.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 12,
+                    "code": 119,
+                    "comment": 0,
+                    "filename": "tslint.json"
+                }
+            ]
+        },
+        {
+            "version": "0.1.7",
+            "counttime": "2019-04-12 09:51:23",
+            "filesum": 220,
+            "codesum": 19906,
+            "commentsum": 3420,
+            "blanksum": 1542,
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": ".editorconfig"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 20,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 7,
+                    "code": 135,
+                    "comment": 0,
+                    "filename": "angular.json"
+                },
+                {
+                    "blank": 79,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\3rdpartylicenses.txt"
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\wicket.js"
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\main.ace75adc0679b9f2c25d.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\manifest.webmanifest"
+                },
+                {
+                    "blank": 21,
+                    "code": 1758,
+                    "comment": 907,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\ngsw-worker.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 75,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\ngsw.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\polyfills.3eb7881d3a00da6c675e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\runtime.a5dd35324ddfd942bef1.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\safety-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\styles.7e69e535420df75d922b.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\worker-basic.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.e2e-spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.e2e-spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.po.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.po.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app-routing.module.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app-routing.module.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 74,
+                    "comment": 4,
+                    "filename": "dist\\out-tsc\\src\\app\\app.module.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.module.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 70,
+                    "comment": 2,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 154,
+                    "comment": 10,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 82,
+                    "comment": 11,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 191,
+                    "comment": 14,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 80,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 62,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 298,
+                    "comment": 47,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 33,
+                    "comment": 4,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoFencing.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoFencing.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 53,
+                    "comment": 10,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoposition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoposition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 7,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\marker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\marker.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\clusterSurname-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\clusterSurname-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geofencingn-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geofencingn-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geolocation-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geolocation-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\view.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\view.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 12,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.prod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.prod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\main.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\main.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 69,
+                    "filename": "dist\\out-tsc\\src\\polyfills.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\polyfills.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 5,
+                    "filename": "dist\\out-tsc\\src\\test.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\test.js.map"
+                },
+                {
+                    "blank": 79,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "dist\\StoneViewer\\3rdpartylicenses.txt"
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "dist\\StoneViewer\\assets\\wicket.js"
+                },
+                {
+                    "filename": "dist\\StoneViewer\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "dist\\StoneViewer\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\main.ace75adc0679b9f2c25d.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\manifest.webmanifest"
+                },
+                {
+                    "blank": 21,
+                    "code": 1758,
+                    "comment": 907,
+                    "filename": "dist\\StoneViewer\\ngsw-worker.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 75,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\ngsw.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\polyfills.3eb7881d3a00da6c675e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\runtime.a5dd35324ddfd942bef1.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\StoneViewer\\safety-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\styles.7e69e535420df75d922b.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\StoneViewer\\worker-basic.min.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 23,
+                    "comment": 2,
+                    "filename": "e2e\\protractor.conf.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "e2e\\src\\app.e2e-spec.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "e2e\\src\\app.po.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "e2e\\tsconfig.e2e.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "ngsw-config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 10141,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 52,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 13,
+                    "code": 14,
+                    "comment": 5,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\app\\app-routing.module.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.sass"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.ts"
+                },
+                {
+                    "blank": 13,
+                    "code": 58,
+                    "comment": 3,
+                    "filename": "src\\app\\app.module.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.spec.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 59,
+                    "comment": 1,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.ts"
+                },
+                {
+                    "blank": 35,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.html"
+                },
+                {
+                    "blank": 16,
+                    "code": 98,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.spec.ts"
+                },
+                {
+                    "blank": 65,
+                    "code": 124,
+                    "comment": 9,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.html"
+                },
+                {
+                    "blank": 12,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 58,
+                    "comment": 10,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 88,
+                    "code": 177,
+                    "comment": 13,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.ts"
+                },
+                {
+                    "blank": 11,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 78,
+                    "code": 84,
+                    "comment": 9,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 38,
+                    "comment": 60,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.ts"
+                },
+                {
+                    "blank": 15,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.html"
+                },
+                {
+                    "blank": 4,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 32,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.spec.ts"
+                },
+                {
+                    "blank": 156,
+                    "code": 256,
+                    "comment": 65,
+                    "filename": "src\\app\\controller\\data\\data.component.ts"
+                },
+                {
+                    "blank": 26,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\geoFunctions\\geoFencing.ts"
+                },
+                {
+                    "blank": 23,
+                    "code": 48,
+                    "comment": 9,
+                    "filename": "src\\app\\controller\\geoFunctions\\geoposition.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\http-controller.service.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 29,
+                    "comment": 6,
+                    "filename": "src\\app\\controller\\http-controller.service.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\marker.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\push-notifications.service.spec.ts"
+                },
+                {
+                    "blank": 16,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "src\\app\\controller\\push-notifications.service.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\pwa-service.service.spec.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\pwa-service.service.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\clusterSurname-settings.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\geofencingn-settings.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\geolocation-settings.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\Settings\\view.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\assets\\.gitkeep"
+                },
+                {
+                    "filename": "src\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "src\\assets\\wicket.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "src\\browserslist"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\environments\\environment.prod.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "src\\environments\\environment.ts"
+                },
+                {
+                    "filename": "src\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "src\\index.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 28,
+                    "comment": 3,
+                    "filename": "src\\karma.conf.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "src\\manifest.webmanifest"
+                },
+                {
+                    "blank": 12,
+                    "code": 1,
+                    "comment": 68,
+                    "filename": "src\\polyfills.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "src\\styles.sass"
+                },
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 4,
+                    "filename": "src\\test.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\tsconfig.app.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\tsconfig.spec.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\tslint.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 12,
+                    "code": 119,
+                    "comment": 0,
+                    "filename": "tslint.json"
+                }
+            ]
+        },
+        {
+            "version": "0.1.7",
+            "counttime": "2019-04-12 11:15:27",
+            "filesum": 220,
+            "codesum": 19906,
+            "commentsum": 3420,
+            "blanksum": 1542,
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": ".editorconfig"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 20,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 7,
+                    "code": 135,
+                    "comment": 0,
+                    "filename": "angular.json"
+                },
+                {
+                    "blank": 79,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\3rdpartylicenses.txt"
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\assets\\wicket.js"
+                },
+                {
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\main.ace75adc0679b9f2c25d.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\manifest.webmanifest"
+                },
+                {
+                    "blank": 21,
+                    "code": 1758,
+                    "comment": 907,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\ngsw-worker.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 75,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\ngsw.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\polyfills.3eb7881d3a00da6c675e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\runtime.a5dd35324ddfd942bef1.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\safety-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\styles.7e69e535420df75d922b.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\gregorHub.github.io\\GregorHub.github.io\\worker-basic.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.e2e-spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.e2e-spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.po.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\e2e\\src\\app.po.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app-routing.module.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app-routing.module.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 74,
+                    "comment": 4,
+                    "filename": "dist\\out-tsc\\src\\app\\app.module.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\app.module.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 70,
+                    "comment": 2,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-dash-board\\info-dash-board.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 154,
+                    "comment": 10,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\info-pop-up\\info-pop-up.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 82,
+                    "comment": 11,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\main-frame\\main-frame.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 191,
+                    "comment": 14,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\map-dialog\\map-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 80,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 62,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\components\\settings-dialog\\settings-dialog.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data-controller.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 298,
+                    "comment": 47,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\data\\data.component.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 33,
+                    "comment": 4,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoFencing.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoFencing.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 53,
+                    "comment": 10,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoposition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\geoFunctions\\geoposition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 7,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\http-controller.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\marker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\marker.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\push-notifications.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.spec.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\pwa-service.service.spec.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\clusterSurname-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\clusterSurname-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geofencingn-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geofencingn-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 9,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geolocation-settings.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\geolocation-settings.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\view.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\app\\controller\\Settings\\view.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 12,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.prod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\environments\\environment.prod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "dist\\out-tsc\\src\\main.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\main.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 69,
+                    "filename": "dist\\out-tsc\\src\\polyfills.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\polyfills.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 5,
+                    "filename": "dist\\out-tsc\\src\\test.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\out-tsc\\src\\test.js.map"
+                },
+                {
+                    "blank": 79,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "dist\\StoneViewer\\3rdpartylicenses.txt"
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\StoneViewer\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "dist\\StoneViewer\\assets\\wicket.js"
+                },
+                {
+                    "filename": "dist\\StoneViewer\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "dist\\StoneViewer\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\main.ace75adc0679b9f2c25d.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\manifest.webmanifest"
+                },
+                {
+                    "blank": 21,
+                    "code": 1758,
+                    "comment": 907,
+                    "filename": "dist\\StoneViewer\\ngsw-worker.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 75,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\ngsw.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\polyfills.3eb7881d3a00da6c675e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\runtime.a5dd35324ddfd942bef1.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\StoneViewer\\safety-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\StoneViewer\\styles.7e69e535420df75d922b.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 8,
+                    "filename": "dist\\StoneViewer\\worker-basic.min.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 23,
+                    "comment": 2,
+                    "filename": "e2e\\protractor.conf.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "e2e\\src\\app.e2e-spec.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "e2e\\src\\app.po.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "e2e\\tsconfig.e2e.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "ngsw-config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 10141,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 52,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 13,
+                    "code": 14,
+                    "comment": 5,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\app\\app-routing.module.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.sass"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\app.component.ts"
+                },
+                {
+                    "blank": 13,
+                    "code": 58,
+                    "comment": 3,
+                    "filename": "src\\app\\app.module.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.spec.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 59,
+                    "comment": 1,
+                    "filename": "src\\app\\components\\info-dash-board\\info-dash-board.component.ts"
+                },
+                {
+                    "blank": 35,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.html"
+                },
+                {
+                    "blank": 16,
+                    "code": 98,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.spec.ts"
+                },
+                {
+                    "blank": 65,
+                    "code": 124,
+                    "comment": 9,
+                    "filename": "src\\app\\components\\info-pop-up\\info-pop-up.component.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.html"
+                },
+                {
+                    "blank": 12,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 58,
+                    "comment": 10,
+                    "filename": "src\\app\\components\\main-frame\\main-frame.component.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 88,
+                    "code": 177,
+                    "comment": 13,
+                    "filename": "src\\app\\components\\map-dialog\\map-dialog.component.ts"
+                },
+                {
+                    "blank": 11,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 78,
+                    "code": 84,
+                    "comment": 9,
+                    "filename": "src\\app\\components\\notifications-dialog\\notifications-dialog.component.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 38,
+                    "comment": 60,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-check-box\\settings-check-box.component.ts"
+                },
+                {
+                    "blank": 15,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.html"
+                },
+                {
+                    "blank": 4,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 32,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\app\\components\\settings-dialog\\settings-dialog.component.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\data\\data.component.spec.ts"
+                },
+                {
+                    "blank": 156,
+                    "code": 256,
+                    "comment": 65,
+                    "filename": "src\\app\\controller\\data\\data.component.ts"
+                },
+                {
+                    "blank": 26,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\geoFunctions\\geoFencing.ts"
+                },
+                {
+                    "blank": 23,
+                    "code": 48,
+                    "comment": 9,
+                    "filename": "src\\app\\controller\\geoFunctions\\geoposition.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\http-controller.service.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 29,
+                    "comment": 6,
+                    "filename": "src\\app\\controller\\http-controller.service.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\marker.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\push-notifications.service.spec.ts"
+                },
+                {
+                    "blank": 16,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "src\\app\\controller\\push-notifications.service.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\pwa-service.service.spec.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\pwa-service.service.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\clusterSurname-settings.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\geofencingn-settings.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 8,
+                    "filename": "src\\app\\controller\\Settings\\geolocation-settings.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\app\\controller\\Settings\\view.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\assets\\.gitkeep"
+                },
+                {
+                    "filename": "src\\assets\\0565-zoom-in2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\0566-zoom-out2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\1394-radio-checked.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\bell.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\bellActive.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\icons\\icon-144x144.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\leftBtn.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\marker.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\settings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\assets\\test.txt"
+                },
+                {
+                    "blank": 134,
+                    "code": 451,
+                    "comment": 326,
+                    "filename": "src\\assets\\wicket.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "src\\browserslist"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\environments\\environment.prod.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "src\\environments\\environment.ts"
+                },
+                {
+                    "filename": "src\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "src\\index.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 28,
+                    "comment": 3,
+                    "filename": "src\\karma.conf.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "src\\manifest.webmanifest"
+                },
+                {
+                    "blank": 12,
+                    "code": 1,
+                    "comment": 68,
+                    "filename": "src\\polyfills.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "src\\styles.sass"
+                },
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 4,
+                    "filename": "src\\test.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\tsconfig.app.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\tsconfig.spec.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\tslint.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 12,
+                    "code": 119,
+                    "comment": 0,
+                    "filename": "tslint.json"
+                }
+            ]
+        }
+    ]
+}

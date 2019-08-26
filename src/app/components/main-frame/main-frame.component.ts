@@ -3,6 +3,9 @@ import { Geoposition } from 'src/app/controller/geoFunctions/geoposition';
 import { PwaServiceService } from 'src/app/controller/pwa-service.service';
 import { Geofencing } from 'src/app/controller/geoFunctions/geoFencing';
 
+import { NgxIndexedDB } from 'ngx-indexed-db';
+
+
 
 @Component({
   selector: 'app-main-frame',
@@ -16,22 +19,81 @@ export class MainFrameComponent implements OnInit {
   localPos=this._geoposition
   toptext="StoneViewer"
 
+
+
+
+
   ngOnInit() {
 
-
-      
-      
+  
 
 
-   // console.log( this.localPos.$geolocationPosition.coords)
+
+  
 
   }
+
+
+
+
+
 
 settingsIsHidden=true;
 mapIsHidden=false;
 InfoPopUpIsHidde=true;
-NotificationsDialogIsHidden=true;
+NotificationsDialogIsHidden=false;
 NewNotifications=true;
+submenueIsHidden=true;
+helpIsHidden=true;
+gallerieIsHidden=true;
+mapsettingsIsHidden=true;
+
+
+switchMapsettingsIsHidden(){
+
+  if(this.mapsettingsIsHidden==true){
+    this.mapsettingsIsHidden=false;
+  }else{
+    this.mapsettingsIsHidden=true;
+  }
+  }
+
+
+switchGallerieIsHidden(){
+
+  if(this.gallerieIsHidden==true){
+    this.gallerieIsHidden=false;
+  }else{
+    this.gallerieIsHidden=true;
+  }
+  }
+
+
+switchHelpIsHidden(){
+
+  if(this.helpIsHidden==true){
+    this.helpIsHidden=false;
+  }else{
+    this.helpIsHidden=true;
+  }
+  }
+
+
+
+
+
+switchSubmenue(){
+
+
+
+
+
+  if(this.submenueIsHidden==true){
+    this.submenueIsHidden=false;
+  }else{
+    this.submenueIsHidden=true;
+  }
+  }
 
 
 

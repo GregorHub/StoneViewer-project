@@ -1,40 +1,73 @@
 .imgControll
-  margin-top: 30%
+  margin-top: 30px
   zoom: 80%
   max-width: 100px
-  max-height: 50px
+  max-height: 30px
+  filter: invert(1)
   &:active
     filter: invert(0.3)
 
 .mapcontrols
   position: absolute
-  top: 7%
-  right: 2%
-  background-color: rgba(56,173,169,0.9)
+  top: 2%
+  right: 0%
+  background-color: rgba(35,35,35,0.9)
+  //background-color: rgba(240,240,240,0.9)
   z-index: 20003
   border: 0px solid black
-  border-radius: 20px
+  border-bottom-left-radius: 5px
+  border-top-left-radius: 5px
   align-content: center
+  padding: 4px
+  padding-left: 10px
+  padding-right: 10px
 
 .mapDiv
   position: absolute
   top: 0%
   margi-top: 0%
-  height: 85%
+  height: 98%
   width: 100%
-  border-radius: 8px
-  border: solid 2px linear-gradient(to bottom, rgb(221, 235, 211), rgb(230, 243, 218))
+  border-radius: 0px
+  background-color: 	rgb(10,10,30)
+  border: solid 0px linear-gradient(to bottom, rgb(221, 235, 211), rgb(230, 243, 218))
+  touch-action: auto
 
 .zoomInfo
   position: absolute
   padding: 2px
-  bottom: 20%
-  width: 93%
+  bottom: 5%
+  width: 80%
+  left: 10%
+  text-align: center
   margin-top: 2%
-  margin-left: 3%
   font-size: 0.64em
   font-family: Arial, Helvetica, sans-serif
   z-index: 20003
   align-content: center
   border-radius: 20px
-  background-color: rgba(56,173,169,0.9)
+  background-color: rgba(240,240,240,0.9)
+  background-color: rgba(35,35,35,0.9)
+  color: whitesmoke
+
+
+.rotated-markerdiv
+  text-align: center
+  background-color: none
+  border: none
+
+.rotate-north
+  transform: rotate(0)
+  /* CSS3
+  -moz-transform: rotate(0)
+  /* Firefox
+  -webkit-transform: rotate(0)
+  /* Webkit
+  -o-transform: rotate(0)
+  /* Opera
+  -ms-transform: rotate(0)
+  /* IE 9 */
+  
+
+.rotatedeg
+  -webkit-transform: rotate(180deg)

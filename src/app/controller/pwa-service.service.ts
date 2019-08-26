@@ -9,7 +9,15 @@ export class PwaServiceService {
   promptEvent: Event;
   constructor(private swUpdate: SwUpdate) {
 
+
+  //console.log(this.swUpdate.checkForUpdate())
+
+
     this.swUpdate.available.subscribe(event => {
+      
+    // console.log(event)
+      
+      
       if (this.askUserToUpdate) {
         window.location.reload();
 

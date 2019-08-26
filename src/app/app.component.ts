@@ -10,7 +10,7 @@ import { HttpControllerService } from './controller/http-controller.service';
 export class AppComponent {
   title = 'StoneViewer';
 
-
+ 
   
 
 }

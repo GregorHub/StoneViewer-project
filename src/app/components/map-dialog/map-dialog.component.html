@@ -1,12 +1,24 @@
+
+ <script src="leaflet.rotatedMarker.js"></script>
+
 <div class="mapcontrols">              
-  <img class="imgControll" (click)="zoomIn()" src=".././assets/0566-zoom-out2.png"> <br>
-  <img class="imgControll" (click)="zoomOut()" src=".././assets/0565-zoom-in2.png"><br>
-  <img class="imgControll" (click)="showMyLocation(1==1)" src=".././assets/1394-radio-checked.png"><br>
+
+  
+  <img class="imgControll" (click)="zoomIn()" src="./assets/1114-plus.png"> <br>
+  <img class="imgControll" (click)="zoomOut()" src="./assets/1115-minus.png"> <br>
+  <img class="imgControll" (click)="showMyLocation(1==1)" src="./assets/0316-location4.png"><br>
 
 
 </div>
 <div *ngIf="toHigh!==''" class="zoomInfo" >{{toHigh}}</div>
 <div  class="mapDiv" id="map" (click)="getDataInView()" (touchend)="getDataInView()"  > </div>
+
+
+
+<app-info-dash-board></app-info-dash-board>
+
+
+
 
 
 

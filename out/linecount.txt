@@ -1,0 +1,696 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-04-12 09:50:30
+count workspace : c:\ANgularDevelopmentLab\StoneViewer
+total files : 220
+total code lines : 19906
+total comment lines : 3420
+total blank lines : 1542
+
+.editorconfig, code is 11, comment is 1, blank is 2.
+.gitignore, code is 17, comment is 20, blank is 4.
+angular.json, code is 135, comment is 0, blank is 7.
+dist\gregorHub.github.io\GregorHub.github.io\3rdpartylicenses.txt, code is 252, comment is 3, blank is 79.
+dist\gregorHub.github.io\GregorHub.github.io\assets\0565-zoom-in2.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\0566-zoom-out2.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\1394-radio-checked.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\bell.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\bellActive.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\icons\icon-144x144.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\leftBtn.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\marker.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\settings.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\test.txt, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\assets\wicket.js, code is 451, comment is 326, blank is 134.
+dist\gregorHub.github.io\GregorHub.github.io\favicon.ico, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\index.html, code is 25, comment is 2, blank is 8.
+dist\gregorHub.github.io\GregorHub.github.io\main.ace75adc0679b9f2c25d.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\ngsw-worker.js, code is 1758, comment is 907, blank is 21.
+dist\gregorHub.github.io\GregorHub.github.io\ngsw.json, code is 75, comment is 0, blank is 2.
+dist\gregorHub.github.io\GregorHub.github.io\polyfills.3eb7881d3a00da6c675e.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\runtime.a5dd35324ddfd942bef1.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\safety-worker.js, code is 6, comment is 8, blank is 3.
+dist\gregorHub.github.io\GregorHub.github.io\styles.7e69e535420df75d922b.css, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\worker-basic.min.js, code is 6, comment is 8, blank is 3.
+dist\out-tsc\e2e\src\app.e2e-spec.js, code is 11, comment is 1, blank is 0.
+dist\out-tsc\e2e\src\app.e2e-spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\e2e\src\app.po.js, code is 13, comment is 1, blank is 0.
+dist\out-tsc\e2e\src\app.po.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app-routing.module.js, code is 21, comment is 1, blank is 0.
+dist\out-tsc\src\app\app-routing.module.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.component.js, code is 21, comment is 1, blank is 0.
+dist\out-tsc\src\app\app.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.component.spec.js, code is 31, comment is 1, blank is 0.
+dist\out-tsc\src\app\app.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.module.js, code is 74, comment is 4, blank is 0.
+dist\out-tsc\src\app\app.module.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.js, code is 70, comment is 2, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.js, code is 154, comment is 10, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.js, code is 82, comment is 11, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.js, code is 191, comment is 14, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.js, code is 80, comment is 9, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.js, code is 45, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.js, code is 62, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.js, code is 18, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.js, code is 298, comment is 47, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoFencing.js, code is 33, comment is 4, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoFencing.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoposition.js, code is 53, comment is 10, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoposition.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.js, code is 45, comment is 7, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\marker.js, code is 0, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\marker.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.js, code is 36, comment is 2, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.js, code is 31, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\clusterSurname-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\clusterSurname-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geofencingn-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geofencingn-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geolocation-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geolocation-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\view.js, code is 0, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\Settings\view.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\environments\environment.js, code is 3, comment is 12, blank is 0.
+dist\out-tsc\src\environments\environment.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\environments\environment.prod.js, code is 3, comment is 1, blank is 0.
+dist\out-tsc\src\environments\environment.prod.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\main.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\main.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\polyfills.js, code is 1, comment is 69, blank is 0.
+dist\out-tsc\src\polyfills.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\test.js, code is 6, comment is 5, blank is 0.
+dist\out-tsc\src\test.js.map, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\3rdpartylicenses.txt, code is 252, comment is 3, blank is 79.
+dist\StoneViewer\assets\0565-zoom-in2.png, it is a binary file.
+dist\StoneViewer\assets\0566-zoom-out2.png, it is a binary file.
+dist\StoneViewer\assets\1394-radio-checked.png, it is a binary file.
+dist\StoneViewer\assets\bell.png, it is a binary file.
+dist\StoneViewer\assets\bellActive.png, it is a binary file.
+dist\StoneViewer\assets\icons\icon-144x144.png, it is a binary file.
+dist\StoneViewer\assets\leftBtn.png, it is a binary file.
+dist\StoneViewer\assets\marker.png, it is a binary file.
+dist\StoneViewer\assets\settings.png, it is a binary file.
+dist\StoneViewer\assets\test.txt, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\assets\wicket.js, code is 451, comment is 326, blank is 134.
+dist\StoneViewer\favicon.ico, it is a binary file.
+dist\StoneViewer\index.html, code is 25, comment is 2, blank is 8.
+dist\StoneViewer\main.ace75adc0679b9f2c25d.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+dist\StoneViewer\ngsw-worker.js, code is 1758, comment is 907, blank is 21.
+dist\StoneViewer\ngsw.json, code is 75, comment is 0, blank is 2.
+dist\StoneViewer\polyfills.3eb7881d3a00da6c675e.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\runtime.a5dd35324ddfd942bef1.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\safety-worker.js, code is 6, comment is 8, blank is 3.
+dist\StoneViewer\styles.7e69e535420df75d922b.css, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\worker-basic.min.js, code is 6, comment is 8, blank is 3.
+e2e\protractor.conf.js, code is 23, comment is 2, blank is 3.
+e2e\src\app.e2e-spec.ts, code is 11, comment is 0, blank is 3.
+e2e\src\app.po.ts, code is 9, comment is 0, blank is 2.
+e2e\tsconfig.e2e.json, code is 12, comment is 0, blank is 1.
+ngsw-config.json, code is 24, comment is 0, blank is 2.
+package-lock.json, code is 10141, comment is 0, blank is 0.
+package.json, code is 52, comment is 0, blank is 0.
+README.md, code is 14, comment is 5, blank is 13.
+src\app\app-routing.module.ts, code is 8, comment is 0, blank is 2.
+src\app\app.component.html, code is 2, comment is 0, blank is 1.
+src\app\app.component.sass, code is 0, comment is 0, blank is 0.
+src\app\app.component.spec.ts, code is 31, comment is 0, blank is 4.
+src\app\app.component.ts, code is 10, comment is 0, blank is 6.
+src\app\app.module.ts, code is 58, comment is 3, blank is 13.
+src\app\components\info-dash-board\info-dash-board.component.html, code is 10, comment is 0, blank is 9.
+src\app\components\info-dash-board\info-dash-board.component.sass, code is 35, comment is 0, blank is 2.
+src\app\components\info-dash-board\info-dash-board.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\info-dash-board\info-dash-board.component.ts, code is 59, comment is 1, blank is 24.
+src\app\components\info-pop-up\info-pop-up.component.html, code is 32, comment is 0, blank is 35.
+src\app\components\info-pop-up\info-pop-up.component.sass, code is 98, comment is 0, blank is 16.
+src\app\components\info-pop-up\info-pop-up.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\info-pop-up\info-pop-up.component.ts, code is 124, comment is 9, blank is 65.
+src\app\components\main-frame\main-frame.component.html, code is 25, comment is 0, blank is 24.
+src\app\components\main-frame\main-frame.component.sass, code is 43, comment is 0, blank is 12.
+src\app\components\main-frame\main-frame.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\main-frame\main-frame.component.ts, code is 58, comment is 10, blank is 27.
+src\app\components\map-dialog\map-dialog.component.html, code is 7, comment is 0, blank is 5.
+src\app\components\map-dialog\map-dialog.component.sass, code is 37, comment is 0, blank is 3.
+src\app\components\map-dialog\map-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\map-dialog\map-dialog.component.ts, code is 177, comment is 13, blank is 88.
+src\app\components\notifications-dialog\notifications-dialog.component.html, code is 6, comment is 0, blank is 11.
+src\app\components\notifications-dialog\notifications-dialog.component.sass, code is 24, comment is 0, blank is 2.
+src\app\components\notifications-dialog\notifications-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\notifications-dialog\notifications-dialog.component.ts, code is 84, comment is 9, blank is 78.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.html, code is 4, comment is 0, blank is 1.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.sass, code is 38, comment is 60, blank is 2.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.ts, code is 20, comment is 0, blank is 6.
+src\app\components\settings-dialog\settings-dialog.component.html, code is 15, comment is 0, blank is 15.
+src\app\components\settings-dialog\settings-dialog.component.sass, code is 46, comment is 0, blank is 4.
+src\app\components\settings-dialog\settings-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\settings-dialog\settings-dialog.component.ts, code is 44, comment is 0, blank is 32.
+src\app\controller\data\data.component.html, code is 0, comment is 0, blank is 0.
+src\app\controller\data\data.component.sass, code is 0, comment is 0, blank is 0.
+src\app\controller\data\data.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\controller\data\data.component.ts, code is 256, comment is 65, blank is 156.
+src\app\controller\geoFunctions\geoFencing.ts, code is 31, comment is 0, blank is 26.
+src\app\controller\geoFunctions\geoposition.ts, code is 48, comment is 9, blank is 23.
+src\app\controller\http-controller.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\http-controller.service.ts, code is 29, comment is 6, blank is 27.
+src\app\controller\marker.ts, code is 10, comment is 0, blank is 1.
+src\app\controller\push-notifications.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\push-notifications.service.ts, code is 24, comment is 1, blank is 16.
+src\app\controller\pwa-service.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\pwa-service.service.ts, code is 16, comment is 0, blank is 10.
+src\app\controller\Settings\clusterSurname-settings.ts, code is 9, comment is 8, blank is 9.
+src\app\controller\Settings\geofencingn-settings.ts, code is 9, comment is 8, blank is 5.
+src\app\controller\Settings\geolocation-settings.ts, code is 10, comment is 8, blank is 9.
+src\app\controller\Settings\view.ts, code is 4, comment is 0, blank is 2.
+src\assets\.gitkeep, code is 0, comment is 0, blank is 0.
+src\assets\0565-zoom-in2.png, it is a binary file.
+src\assets\0566-zoom-out2.png, it is a binary file.
+src\assets\1394-radio-checked.png, it is a binary file.
+src\assets\bell.png, it is a binary file.
+src\assets\bellActive.png, it is a binary file.
+src\assets\icons\icon-144x144.png, it is a binary file.
+src\assets\leftBtn.png, it is a binary file.
+src\assets\marker.png, it is a binary file.
+src\assets\settings.png, it is a binary file.
+src\assets\test.txt, code is 1, comment is 0, blank is 0.
+src\assets\wicket.js, code is 451, comment is 326, blank is 134.
+src\browserslist, code is 10, comment is 1, blank is 1.
+src\environments\environment.prod.ts, code is 3, comment is 0, blank is 0.
+src\environments\environment.ts, code is 3, comment is 11, blank is 2.
+src\favicon.ico, it is a binary file.
+src\index.html, code is 25, comment is 2, blank is 8.
+src\karma.conf.js, code is 28, comment is 3, blank is 1.
+src\main.ts, code is 9, comment is 0, blank is 3.
+src\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+src\polyfills.ts, code is 1, comment is 68, blank is 12.
+src\styles.sass, code is 18, comment is 1, blank is 1.
+src\test.ts, code is 13, comment is 4, blank is 3.
+src\tsconfig.app.json, code is 10, comment is 0, blank is 1.
+src\tsconfig.spec.json, code is 15, comment is 0, blank is 3.
+src\tslint.json, code is 15, comment is 0, blank is 2.
+tsconfig.json, code is 19, comment is 0, blank is 2.
+tslint.json, code is 119, comment is 0, blank is 12.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-04-12 09:51:23
+count workspace : c:\ANgularDevelopmentLab\StoneViewer
+total files : 220
+total code lines : 19906
+total comment lines : 3420
+total blank lines : 1542
+
+.editorconfig, code is 11, comment is 1, blank is 2.
+.gitignore, code is 17, comment is 20, blank is 4.
+angular.json, code is 135, comment is 0, blank is 7.
+dist\gregorHub.github.io\GregorHub.github.io\3rdpartylicenses.txt, code is 252, comment is 3, blank is 79.
+dist\gregorHub.github.io\GregorHub.github.io\assets\0565-zoom-in2.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\0566-zoom-out2.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\1394-radio-checked.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\bell.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\bellActive.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\icons\icon-144x144.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\leftBtn.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\marker.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\settings.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\test.txt, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\assets\wicket.js, code is 451, comment is 326, blank is 134.
+dist\gregorHub.github.io\GregorHub.github.io\favicon.ico, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\index.html, code is 25, comment is 2, blank is 8.
+dist\gregorHub.github.io\GregorHub.github.io\main.ace75adc0679b9f2c25d.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\ngsw-worker.js, code is 1758, comment is 907, blank is 21.
+dist\gregorHub.github.io\GregorHub.github.io\ngsw.json, code is 75, comment is 0, blank is 2.
+dist\gregorHub.github.io\GregorHub.github.io\polyfills.3eb7881d3a00da6c675e.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\runtime.a5dd35324ddfd942bef1.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\safety-worker.js, code is 6, comment is 8, blank is 3.
+dist\gregorHub.github.io\GregorHub.github.io\styles.7e69e535420df75d922b.css, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\worker-basic.min.js, code is 6, comment is 8, blank is 3.
+dist\out-tsc\e2e\src\app.e2e-spec.js, code is 11, comment is 1, blank is 0.
+dist\out-tsc\e2e\src\app.e2e-spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\e2e\src\app.po.js, code is 13, comment is 1, blank is 0.
+dist\out-tsc\e2e\src\app.po.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app-routing.module.js, code is 21, comment is 1, blank is 0.
+dist\out-tsc\src\app\app-routing.module.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.component.js, code is 21, comment is 1, blank is 0.
+dist\out-tsc\src\app\app.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.component.spec.js, code is 31, comment is 1, blank is 0.
+dist\out-tsc\src\app\app.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.module.js, code is 74, comment is 4, blank is 0.
+dist\out-tsc\src\app\app.module.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.js, code is 70, comment is 2, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.js, code is 154, comment is 10, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.js, code is 82, comment is 11, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.js, code is 191, comment is 14, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.js, code is 80, comment is 9, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.js, code is 45, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.js, code is 62, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.js, code is 18, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.js, code is 298, comment is 47, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoFencing.js, code is 33, comment is 4, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoFencing.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoposition.js, code is 53, comment is 10, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoposition.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.js, code is 45, comment is 7, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\marker.js, code is 0, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\marker.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.js, code is 36, comment is 2, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.js, code is 31, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\clusterSurname-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\clusterSurname-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geofencingn-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geofencingn-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geolocation-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geolocation-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\view.js, code is 0, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\Settings\view.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\environments\environment.js, code is 3, comment is 12, blank is 0.
+dist\out-tsc\src\environments\environment.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\environments\environment.prod.js, code is 3, comment is 1, blank is 0.
+dist\out-tsc\src\environments\environment.prod.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\main.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\main.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\polyfills.js, code is 1, comment is 69, blank is 0.
+dist\out-tsc\src\polyfills.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\test.js, code is 6, comment is 5, blank is 0.
+dist\out-tsc\src\test.js.map, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\3rdpartylicenses.txt, code is 252, comment is 3, blank is 79.
+dist\StoneViewer\assets\0565-zoom-in2.png, it is a binary file.
+dist\StoneViewer\assets\0566-zoom-out2.png, it is a binary file.
+dist\StoneViewer\assets\1394-radio-checked.png, it is a binary file.
+dist\StoneViewer\assets\bell.png, it is a binary file.
+dist\StoneViewer\assets\bellActive.png, it is a binary file.
+dist\StoneViewer\assets\icons\icon-144x144.png, it is a binary file.
+dist\StoneViewer\assets\leftBtn.png, it is a binary file.
+dist\StoneViewer\assets\marker.png, it is a binary file.
+dist\StoneViewer\assets\settings.png, it is a binary file.
+dist\StoneViewer\assets\test.txt, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\assets\wicket.js, code is 451, comment is 326, blank is 134.
+dist\StoneViewer\favicon.ico, it is a binary file.
+dist\StoneViewer\index.html, code is 25, comment is 2, blank is 8.
+dist\StoneViewer\main.ace75adc0679b9f2c25d.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+dist\StoneViewer\ngsw-worker.js, code is 1758, comment is 907, blank is 21.
+dist\StoneViewer\ngsw.json, code is 75, comment is 0, blank is 2.
+dist\StoneViewer\polyfills.3eb7881d3a00da6c675e.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\runtime.a5dd35324ddfd942bef1.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\safety-worker.js, code is 6, comment is 8, blank is 3.
+dist\StoneViewer\styles.7e69e535420df75d922b.css, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\worker-basic.min.js, code is 6, comment is 8, blank is 3.
+e2e\protractor.conf.js, code is 23, comment is 2, blank is 3.
+e2e\src\app.e2e-spec.ts, code is 11, comment is 0, blank is 3.
+e2e\src\app.po.ts, code is 9, comment is 0, blank is 2.
+e2e\tsconfig.e2e.json, code is 12, comment is 0, blank is 1.
+ngsw-config.json, code is 24, comment is 0, blank is 2.
+package-lock.json, code is 10141, comment is 0, blank is 0.
+package.json, code is 52, comment is 0, blank is 0.
+README.md, code is 14, comment is 5, blank is 13.
+src\app\app-routing.module.ts, code is 8, comment is 0, blank is 2.
+src\app\app.component.html, code is 2, comment is 0, blank is 1.
+src\app\app.component.sass, code is 0, comment is 0, blank is 0.
+src\app\app.component.spec.ts, code is 31, comment is 0, blank is 4.
+src\app\app.component.ts, code is 10, comment is 0, blank is 6.
+src\app\app.module.ts, code is 58, comment is 3, blank is 13.
+src\app\components\info-dash-board\info-dash-board.component.html, code is 10, comment is 0, blank is 9.
+src\app\components\info-dash-board\info-dash-board.component.sass, code is 35, comment is 0, blank is 2.
+src\app\components\info-dash-board\info-dash-board.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\info-dash-board\info-dash-board.component.ts, code is 59, comment is 1, blank is 24.
+src\app\components\info-pop-up\info-pop-up.component.html, code is 32, comment is 0, blank is 35.
+src\app\components\info-pop-up\info-pop-up.component.sass, code is 98, comment is 0, blank is 16.
+src\app\components\info-pop-up\info-pop-up.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\info-pop-up\info-pop-up.component.ts, code is 124, comment is 9, blank is 65.
+src\app\components\main-frame\main-frame.component.html, code is 25, comment is 0, blank is 24.
+src\app\components\main-frame\main-frame.component.sass, code is 43, comment is 0, blank is 12.
+src\app\components\main-frame\main-frame.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\main-frame\main-frame.component.ts, code is 58, comment is 10, blank is 27.
+src\app\components\map-dialog\map-dialog.component.html, code is 7, comment is 0, blank is 5.
+src\app\components\map-dialog\map-dialog.component.sass, code is 37, comment is 0, blank is 3.
+src\app\components\map-dialog\map-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\map-dialog\map-dialog.component.ts, code is 177, comment is 13, blank is 88.
+src\app\components\notifications-dialog\notifications-dialog.component.html, code is 6, comment is 0, blank is 11.
+src\app\components\notifications-dialog\notifications-dialog.component.sass, code is 24, comment is 0, blank is 2.
+src\app\components\notifications-dialog\notifications-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\notifications-dialog\notifications-dialog.component.ts, code is 84, comment is 9, blank is 78.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.html, code is 4, comment is 0, blank is 1.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.sass, code is 38, comment is 60, blank is 2.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.ts, code is 20, comment is 0, blank is 6.
+src\app\components\settings-dialog\settings-dialog.component.html, code is 15, comment is 0, blank is 15.
+src\app\components\settings-dialog\settings-dialog.component.sass, code is 46, comment is 0, blank is 4.
+src\app\components\settings-dialog\settings-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\settings-dialog\settings-dialog.component.ts, code is 44, comment is 0, blank is 32.
+src\app\controller\data\data.component.html, code is 0, comment is 0, blank is 0.
+src\app\controller\data\data.component.sass, code is 0, comment is 0, blank is 0.
+src\app\controller\data\data.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\controller\data\data.component.ts, code is 256, comment is 65, blank is 156.
+src\app\controller\geoFunctions\geoFencing.ts, code is 31, comment is 0, blank is 26.
+src\app\controller\geoFunctions\geoposition.ts, code is 48, comment is 9, blank is 23.
+src\app\controller\http-controller.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\http-controller.service.ts, code is 29, comment is 6, blank is 27.
+src\app\controller\marker.ts, code is 10, comment is 0, blank is 1.
+src\app\controller\push-notifications.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\push-notifications.service.ts, code is 24, comment is 1, blank is 16.
+src\app\controller\pwa-service.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\pwa-service.service.ts, code is 16, comment is 0, blank is 10.
+src\app\controller\Settings\clusterSurname-settings.ts, code is 9, comment is 8, blank is 9.
+src\app\controller\Settings\geofencingn-settings.ts, code is 9, comment is 8, blank is 5.
+src\app\controller\Settings\geolocation-settings.ts, code is 10, comment is 8, blank is 9.
+src\app\controller\Settings\view.ts, code is 4, comment is 0, blank is 2.
+src\assets\.gitkeep, code is 0, comment is 0, blank is 0.
+src\assets\0565-zoom-in2.png, it is a binary file.
+src\assets\0566-zoom-out2.png, it is a binary file.
+src\assets\1394-radio-checked.png, it is a binary file.
+src\assets\bell.png, it is a binary file.
+src\assets\bellActive.png, it is a binary file.
+src\assets\icons\icon-144x144.png, it is a binary file.
+src\assets\leftBtn.png, it is a binary file.
+src\assets\marker.png, it is a binary file.
+src\assets\settings.png, it is a binary file.
+src\assets\test.txt, code is 1, comment is 0, blank is 0.
+src\assets\wicket.js, code is 451, comment is 326, blank is 134.
+src\browserslist, code is 10, comment is 1, blank is 1.
+src\environments\environment.prod.ts, code is 3, comment is 0, blank is 0.
+src\environments\environment.ts, code is 3, comment is 11, blank is 2.
+src\favicon.ico, it is a binary file.
+src\index.html, code is 25, comment is 2, blank is 8.
+src\karma.conf.js, code is 28, comment is 3, blank is 1.
+src\main.ts, code is 9, comment is 0, blank is 3.
+src\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+src\polyfills.ts, code is 1, comment is 68, blank is 12.
+src\styles.sass, code is 18, comment is 1, blank is 1.
+src\test.ts, code is 13, comment is 4, blank is 3.
+src\tsconfig.app.json, code is 10, comment is 0, blank is 1.
+src\tsconfig.spec.json, code is 15, comment is 0, blank is 3.
+src\tslint.json, code is 15, comment is 0, blank is 2.
+tsconfig.json, code is 19, comment is 0, blank is 2.
+tslint.json, code is 119, comment is 0, blank is 12.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-04-12 11:15:27
+count workspace : c:\ANgularDevelopmentLab\StoneViewer
+total files : 220
+total code lines : 19906
+total comment lines : 3420
+total blank lines : 1542
+
+.editorconfig, code is 11, comment is 1, blank is 2.
+.gitignore, code is 17, comment is 20, blank is 4.
+angular.json, code is 135, comment is 0, blank is 7.
+dist\gregorHub.github.io\GregorHub.github.io\3rdpartylicenses.txt, code is 252, comment is 3, blank is 79.
+dist\gregorHub.github.io\GregorHub.github.io\assets\0565-zoom-in2.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\0566-zoom-out2.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\1394-radio-checked.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\bell.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\bellActive.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\icons\icon-144x144.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\leftBtn.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\marker.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\settings.png, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\assets\test.txt, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\assets\wicket.js, code is 451, comment is 326, blank is 134.
+dist\gregorHub.github.io\GregorHub.github.io\favicon.ico, it is a binary file.
+dist\gregorHub.github.io\GregorHub.github.io\index.html, code is 25, comment is 2, blank is 8.
+dist\gregorHub.github.io\GregorHub.github.io\main.ace75adc0679b9f2c25d.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\ngsw-worker.js, code is 1758, comment is 907, blank is 21.
+dist\gregorHub.github.io\GregorHub.github.io\ngsw.json, code is 75, comment is 0, blank is 2.
+dist\gregorHub.github.io\GregorHub.github.io\polyfills.3eb7881d3a00da6c675e.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\runtime.a5dd35324ddfd942bef1.js, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\safety-worker.js, code is 6, comment is 8, blank is 3.
+dist\gregorHub.github.io\GregorHub.github.io\styles.7e69e535420df75d922b.css, code is 1, comment is 0, blank is 0.
+dist\gregorHub.github.io\GregorHub.github.io\worker-basic.min.js, code is 6, comment is 8, blank is 3.
+dist\out-tsc\e2e\src\app.e2e-spec.js, code is 11, comment is 1, blank is 0.
+dist\out-tsc\e2e\src\app.e2e-spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\e2e\src\app.po.js, code is 13, comment is 1, blank is 0.
+dist\out-tsc\e2e\src\app.po.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app-routing.module.js, code is 21, comment is 1, blank is 0.
+dist\out-tsc\src\app\app-routing.module.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.component.js, code is 21, comment is 1, blank is 0.
+dist\out-tsc\src\app\app.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.component.spec.js, code is 31, comment is 1, blank is 0.
+dist\out-tsc\src\app\app.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\app.module.js, code is 74, comment is 4, blank is 0.
+dist\out-tsc\src\app\app.module.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.js, code is 70, comment is 2, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\info-dash-board\info-dash-board.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.js, code is 154, comment is 10, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\info-pop-up\info-pop-up.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.js, code is 82, comment is 11, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\main-frame\main-frame.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.js, code is 191, comment is 14, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\map-dialog\map-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.js, code is 80, comment is 9, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\notifications-dialog\notifications-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.js, code is 45, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.js, code is 62, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\components\settings-dialog\settings-dialog.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.js, code is 18, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data-controller.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.js, code is 298, comment is 47, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.spec.js, code is 20, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\data\data.component.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoFencing.js, code is 33, comment is 4, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoFencing.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoposition.js, code is 53, comment is 10, blank is 0.
+dist\out-tsc\src\app\controller\geoFunctions\geoposition.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.js, code is 45, comment is 7, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\http-controller.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\marker.js, code is 0, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\marker.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.js, code is 36, comment is 2, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\push-notifications.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.js, code is 31, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.spec.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\pwa-service.service.spec.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\clusterSurname-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\clusterSurname-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geofencingn-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geofencingn-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geolocation-settings.js, code is 17, comment is 9, blank is 0.
+dist\out-tsc\src\app\controller\Settings\geolocation-settings.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\app\controller\Settings\view.js, code is 0, comment is 1, blank is 0.
+dist\out-tsc\src\app\controller\Settings\view.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\environments\environment.js, code is 3, comment is 12, blank is 0.
+dist\out-tsc\src\environments\environment.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\environments\environment.prod.js, code is 3, comment is 1, blank is 0.
+dist\out-tsc\src\environments\environment.prod.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\main.js, code is 9, comment is 1, blank is 0.
+dist\out-tsc\src\main.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\polyfills.js, code is 1, comment is 69, blank is 0.
+dist\out-tsc\src\polyfills.js.map, code is 1, comment is 0, blank is 0.
+dist\out-tsc\src\test.js, code is 6, comment is 5, blank is 0.
+dist\out-tsc\src\test.js.map, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\3rdpartylicenses.txt, code is 252, comment is 3, blank is 79.
+dist\StoneViewer\assets\0565-zoom-in2.png, it is a binary file.
+dist\StoneViewer\assets\0566-zoom-out2.png, it is a binary file.
+dist\StoneViewer\assets\1394-radio-checked.png, it is a binary file.
+dist\StoneViewer\assets\bell.png, it is a binary file.
+dist\StoneViewer\assets\bellActive.png, it is a binary file.
+dist\StoneViewer\assets\icons\icon-144x144.png, it is a binary file.
+dist\StoneViewer\assets\leftBtn.png, it is a binary file.
+dist\StoneViewer\assets\marker.png, it is a binary file.
+dist\StoneViewer\assets\settings.png, it is a binary file.
+dist\StoneViewer\assets\test.txt, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\assets\wicket.js, code is 451, comment is 326, blank is 134.
+dist\StoneViewer\favicon.ico, it is a binary file.
+dist\StoneViewer\index.html, code is 25, comment is 2, blank is 8.
+dist\StoneViewer\main.ace75adc0679b9f2c25d.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+dist\StoneViewer\ngsw-worker.js, code is 1758, comment is 907, blank is 21.
+dist\StoneViewer\ngsw.json, code is 75, comment is 0, blank is 2.
+dist\StoneViewer\polyfills.3eb7881d3a00da6c675e.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\runtime.a5dd35324ddfd942bef1.js, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\safety-worker.js, code is 6, comment is 8, blank is 3.
+dist\StoneViewer\styles.7e69e535420df75d922b.css, code is 1, comment is 0, blank is 0.
+dist\StoneViewer\worker-basic.min.js, code is 6, comment is 8, blank is 3.
+e2e\protractor.conf.js, code is 23, comment is 2, blank is 3.
+e2e\src\app.e2e-spec.ts, code is 11, comment is 0, blank is 3.
+e2e\src\app.po.ts, code is 9, comment is 0, blank is 2.
+e2e\tsconfig.e2e.json, code is 12, comment is 0, blank is 1.
+ngsw-config.json, code is 24, comment is 0, blank is 2.
+package-lock.json, code is 10141, comment is 0, blank is 0.
+package.json, code is 52, comment is 0, blank is 0.
+README.md, code is 14, comment is 5, blank is 13.
+src\app\app-routing.module.ts, code is 8, comment is 0, blank is 2.
+src\app\app.component.html, code is 2, comment is 0, blank is 1.
+src\app\app.component.sass, code is 0, comment is 0, blank is 0.
+src\app\app.component.spec.ts, code is 31, comment is 0, blank is 4.
+src\app\app.component.ts, code is 10, comment is 0, blank is 6.
+src\app\app.module.ts, code is 58, comment is 3, blank is 13.
+src\app\components\info-dash-board\info-dash-board.component.html, code is 10, comment is 0, blank is 9.
+src\app\components\info-dash-board\info-dash-board.component.sass, code is 35, comment is 0, blank is 2.
+src\app\components\info-dash-board\info-dash-board.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\info-dash-board\info-dash-board.component.ts, code is 59, comment is 1, blank is 24.
+src\app\components\info-pop-up\info-pop-up.component.html, code is 32, comment is 0, blank is 35.
+src\app\components\info-pop-up\info-pop-up.component.sass, code is 98, comment is 0, blank is 16.
+src\app\components\info-pop-up\info-pop-up.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\info-pop-up\info-pop-up.component.ts, code is 124, comment is 9, blank is 65.
+src\app\components\main-frame\main-frame.component.html, code is 25, comment is 0, blank is 24.
+src\app\components\main-frame\main-frame.component.sass, code is 43, comment is 0, blank is 12.
+src\app\components\main-frame\main-frame.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\main-frame\main-frame.component.ts, code is 58, comment is 10, blank is 27.
+src\app\components\map-dialog\map-dialog.component.html, code is 7, comment is 0, blank is 5.
+src\app\components\map-dialog\map-dialog.component.sass, code is 37, comment is 0, blank is 3.
+src\app\components\map-dialog\map-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\map-dialog\map-dialog.component.ts, code is 177, comment is 13, blank is 88.
+src\app\components\notifications-dialog\notifications-dialog.component.html, code is 6, comment is 0, blank is 11.
+src\app\components\notifications-dialog\notifications-dialog.component.sass, code is 24, comment is 0, blank is 2.
+src\app\components\notifications-dialog\notifications-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\notifications-dialog\notifications-dialog.component.ts, code is 84, comment is 9, blank is 78.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.html, code is 4, comment is 0, blank is 1.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.sass, code is 38, comment is 60, blank is 2.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\settings-dialog\settings-check-box\settings-check-box.component.ts, code is 20, comment is 0, blank is 6.
+src\app\components\settings-dialog\settings-dialog.component.html, code is 15, comment is 0, blank is 15.
+src\app\components\settings-dialog\settings-dialog.component.sass, code is 46, comment is 0, blank is 4.
+src\app\components\settings-dialog\settings-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\components\settings-dialog\settings-dialog.component.ts, code is 44, comment is 0, blank is 32.
+src\app\controller\data\data.component.html, code is 0, comment is 0, blank is 0.
+src\app\controller\data\data.component.sass, code is 0, comment is 0, blank is 0.
+src\app\controller\data\data.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\controller\data\data.component.ts, code is 256, comment is 65, blank is 156.
+src\app\controller\geoFunctions\geoFencing.ts, code is 31, comment is 0, blank is 26.
+src\app\controller\geoFunctions\geoposition.ts, code is 48, comment is 9, blank is 23.
+src\app\controller\http-controller.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\http-controller.service.ts, code is 29, comment is 6, blank is 27.
+src\app\controller\marker.ts, code is 10, comment is 0, blank is 1.
+src\app\controller\push-notifications.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\push-notifications.service.ts, code is 24, comment is 1, blank is 16.
+src\app\controller\pwa-service.service.spec.ts, code is 9, comment is 0, blank is 3.
+src\app\controller\pwa-service.service.ts, code is 16, comment is 0, blank is 10.
+src\app\controller\Settings\clusterSurname-settings.ts, code is 9, comment is 8, blank is 9.
+src\app\controller\Settings\geofencingn-settings.ts, code is 9, comment is 8, blank is 5.
+src\app\controller\Settings\geolocation-settings.ts, code is 10, comment is 8, blank is 9.
+src\app\controller\Settings\view.ts, code is 4, comment is 0, blank is 2.
+src\assets\.gitkeep, code is 0, comment is 0, blank is 0.
+src\assets\0565-zoom-in2.png, it is a binary file.
+src\assets\0566-zoom-out2.png, it is a binary file.
+src\assets\1394-radio-checked.png, it is a binary file.
+src\assets\bell.png, it is a binary file.
+src\assets\bellActive.png, it is a binary file.
+src\assets\icons\icon-144x144.png, it is a binary file.
+src\assets\leftBtn.png, it is a binary file.
+src\assets\marker.png, it is a binary file.
+src\assets\settings.png, it is a binary file.
+src\assets\test.txt, code is 1, comment is 0, blank is 0.
+src\assets\wicket.js, code is 451, comment is 326, blank is 134.
+src\browserslist, code is 10, comment is 1, blank is 1.
+src\environments\environment.prod.ts, code is 3, comment is 0, blank is 0.
+src\environments\environment.ts, code is 3, comment is 11, blank is 2.
+src\favicon.ico, it is a binary file.
+src\index.html, code is 25, comment is 2, blank is 8.
+src\karma.conf.js, code is 28, comment is 3, blank is 1.
+src\main.ts, code is 9, comment is 0, blank is 3.
+src\manifest.webmanifest, code is 51, comment is 0, blank is 0.
+src\polyfills.ts, code is 1, comment is 68, blank is 12.
+src\styles.sass, code is 18, comment is 1, blank is 1.
+src\test.ts, code is 13, comment is 4, blank is 3.
+src\tsconfig.app.json, code is 10, comment is 0, blank is 1.
+src\tsconfig.spec.json, code is 15, comment is 0, blank is 3.
+src\tslint.json, code is 15, comment is 0, blank is 2.
+tsconfig.json, code is 19, comment is 0, blank is 2.
+tslint.json, code is 119, comment is 0, blank is 12.
+===============================================================================

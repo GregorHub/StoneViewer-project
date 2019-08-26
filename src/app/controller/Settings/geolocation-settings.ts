@@ -17,7 +17,8 @@ constructor(){}
      * @param {boolean} value
      */
 	public set $geolocation(value: boolean) {
-		this.geolocation = value;
+        this.geolocation = value;
+     
 	}
     private geolocation :boolean=true;
 

@@ -3,17 +3,17 @@
 <div *ngIf="selcted"   class="mapDiv" (click)="setView()">
 
 
-            Nächster Stolperstein in:
-        {{markerDist}}m
-
+          <div class="textpos" >  Nächster Stolperstein:   {{markerDist}}m
+</div>
 
 </div>
 </span>
 
 
-<img *ngIf="!selcted" class="infoCloseBtn"  (click)="closeSelcted()" src=".././assets/0566-zoom-out2.png">
-<div *ngIf="!selcted" class="mapDiv2" (click)="setSelctedView()">
-       
 
-    {{localChosenMarker.nameForDisplay +" "}}     {{localChosenMarker.distance}}m
- </div>
+<div *ngIf="!selcted" class="mapDiv2" (click)="setSelctedView()">
+        <img *ngIf="!selcted" class="infoCloseBtn"  (click)="closeSelcted()" src="./assets/1133-cross.png">       
+        <div class="textpos" >  {{localChosenMarker.nameForDisplay +" "}}     {{localChosenMarker.distance}}m</div>
+ 
+
+</div>

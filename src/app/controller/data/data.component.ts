@@ -4,9 +4,13 @@ import { BehaviorSubject } from 'rxjs';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import { marker } from '../marker';
-import { hasOwnProperty } from 'q';
+import { hasOwnProperty, longStackSupport } from 'q';
 import { Geoposition } from '../geoFunctions/geoposition';
 import { view } from '../Settings/view';
+import { isNgTemplate } from '@angular/compiler';
+import { NgxIndexedDB } from 'ngx-indexed-db';
+import { JsonPipe } from '@angular/common';
+
 
 declare let L;
 @Component({
@@ -15,14 +19,13 @@ declare let L;
   styleUrls: ['./data.component.sass']
 })
 export class DataComponent  {
-
   //    49.9066     8.12649
  
   oldBounds;
 
 
 testStadeckn:marker[]=[
-/*
+
   { lat:8.126496,
     lan:49.906687,
     name:"testdaten",
@@ -40,32 +43,103 @@ testStadeckn:marker[]=[
   wikiDataMeta:{},
   type:"OSM",
   distance:0
-   }*/
+   }
 ]
 
 
-allFetchedData:marker[]=this.testStadeckn
+//allFetchedData:marker[]=this.testStadeckn
+allFetchedData:marker[]=[]
+
+
+constructor(private _HttpControllerService : HttpControllerService, private _geoposition: Geoposition  ) { 
+
+
+ if (localStorage.getItem("sd")===null){
+  localStorage.setItem("sd", JSON.stringify(this.storeEveryData) )
+ }
+
+  var loacStorageStoredData = JSON.parse( localStorage.getItem("sd"))
 
 
 
-constructor(private _HttpControllerService : HttpControllerService, private _geoposition: Geoposition  ) { }
+ this.storeEveryData=loacStorageStoredData
+
+ if( localStorage.getItem("geolocation")===null ) {
+
+  localStorage.setItem("geolocation","true")
+
+}
+
+if( localStorage.getItem("geofencingRadar")===null ) {
+
+  localStorage.setItem("geofenfingRadar","100")}
+
+}
+
+
+
+
+
 
 
 /**
  * triggert by the reciver functuion
  * filters if points hav the same name
- * filter if the points are on the same place
+ * filter if the points are in the same place
  * adds them to allMarkerList
- * 
+ * Q62763570
+ * http://www.wikidata.org/entity/
  */
 
 storeEveryData:marker[]=this.testStadeckn
 
+
+
+
+
+
+checkSameComponents(item:marker,element:marker){
+ var tv:boolean=false
+
+
+
+  if(item.lan==element.lan){
+    tv=true
+  }
+  
+  if(item.lat==element.lat && item.lan==element.lan ){
+    tv=true
+  }
+
+  
+ if(element.osmMeta.wikidata !== undefined){ 
+ //console.log(item)
+ var itemNameString:string =""+item.name
+     itemNameString=itemNameString.slice(31)
+ 
+var wikidataId: string= element.osmMeta.wikidata
+    
+//console.log("a: " +itemNameString + "b: " + wikidataId)
+
+    if(itemNameString===wikidataId){
+  //   console.log( item.name)    
+      tv=true
+      }
+ }
+
+
+
+  return tv
+}
+
+
+
+
+
+
 reciveNewData(markerList:marker[]){
 
-
   //console.log(this._geoposition.$geolocationPosition )
-
 
   markerList.forEach(element => {
 
@@ -75,28 +149,31 @@ reciveNewData(markerList:marker[]){
             counter=counter+1
           }
        });
-
        if(counter==0){
           this.storeEveryData.push(element)
 
        }
   });
   
-
 var merge=[]
 var single=[]
    this.storeEveryData.forEach(element => {
-  
     var isDOuble=false;
     var doublicates=[]
+
+
+    
+    //console.log(wid)
     //check if this element is double
         this.storeEveryData.forEach(item=>{
-
-           if(item.lan==element.lan && element.name!==item.name ){
+   
+           if(this.checkSameComponents(item,element) && element.name!==item.name  ){
              isDOuble=true
              doublicates.push(item)
+           
            }
-        })
+
+          })
 
         //check if element is already merged
 
@@ -107,7 +184,11 @@ var single=[]
 
             if(merge_item.lan==element.lan  ){
               isMerged==true
-            }
+            //  console.log("ismerged")
+            }  
+
+
+            
 
           });
 
@@ -132,14 +213,14 @@ var single=[]
            single.push(element)
         }
 
- 
      });
 
  merge.sort(function (a,b){ return a.lan - b.lan})
 
 //console.log(merge)
   for(var i =0 ;i<merge.length-1;i++){
-      if(merge[i].lan==merge[i+1].lan){
+
+      if(merge[i].lan==merge[i+1].lan ){
         var  newSingle:marker={
           name:merge[i].name,
           lat:merge[i].lat,
@@ -161,8 +242,6 @@ var single=[]
   }
 
 
-
- 
  this.storeEveryData=single
  //console.log(this.storeEveryData)
 
@@ -171,11 +250,15 @@ this.storeEveryData=this.calcDist(this.storeEveryData)
 
  this.editAllMarkerList(this.storeEveryData)
 
-
-
+ localStorage.setItem("sd", JSON.stringify(this.storeEveryData) )
 
 
 }
+
+
+
+
+
 
 
 
@@ -216,6 +299,9 @@ calcDist(markerList:marker[]){
 allMarkerList= new BehaviorSubject <marker[]>([])
 cast_allMarkerList=this.allMarkerList.asObservable();
 editAllMarkerList(newAllMarkerList){
+
+
+
 this.allMarkerList.next(newAllMarkerList)
 }
 
@@ -259,23 +345,28 @@ editSelectedMarker(newMarker){
  */
 
 
-geofencingRadarDist= new BehaviorSubject <number>(100)
+geofencingRadarDist= new BehaviorSubject <number>(JSON.parse(localStorage.getItem('geofencingRadar')))
 cast_geofencingIsActivated= this.geofencingRadarDist.asObservable()
 editGeofencingIsActivated(newDist){
-this.geofencingRadarDist.next(newDist)
+
+  this.geofencingRadarDist.next(newDist)
+  localStorage.setItem('geofencingRadar', String(newDist))
 }
 
-geopositionIsActivated= new BehaviorSubject <boolean>(true)
+geopositionIsActivated= new BehaviorSubject <boolean>(JSON.parse(localStorage.getItem("geolocation")) )
 cast_geopositionIsActivated= this.geopositionIsActivated.asObservable()
+
 editGeopositionIsActivated(newState){
-this.geopositionIsActivated.next(newState)
-console.log(newState)
+  console.log(newState)
+  this.geopositionIsActivated.next(newState)
+  localStorage.setItem('geolocation', String(newState))
 }
 
-notificationIsActivated= new BehaviorSubject <boolean>(true)
+notificationIsActivated= new BehaviorSubject <boolean>(  JSON.parse(localStorage.getItem("notification"))   )
 cast_notificationnIsActivated= this.notificationIsActivated.asObservable()
 editNotificationIsActivated(newState){
 this.notificationIsActivated.next(newState)
+localStorage.setItem('notification', String(newState))
 }
 
 

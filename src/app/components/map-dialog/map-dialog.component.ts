@@ -45,6 +45,21 @@ toHigh=""
     shadowSize: [41, 41]
   });
   
+directionMarker = new L.Icon({
+      iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+      //iconUrl:"./assets/ori.png",
+      //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41],
+
+  
+})
+
+
+
+
 
 setSelectedMarkerViewAndPolygon(view:view){
      this.map.setView(view.lanlat,view.zoom)
@@ -55,14 +70,27 @@ setSelectedMarkerViewAndPolygon(view:view){
 
 
 ngOnInit() {
-  this.map = L.map('map',{zoomControl: false}).setView([50.0000, 8.27], 8);
+
+
+
+
+
+  var view=[50.06021, 8.204]
+
+if(localStorage.getItem("view")!==null){
+  view= JSON.parse( localStorage.getItem("view"))
+}
+
+  
+
+  this.map = L.map('map',{zoomControl: false}).setView(view, 8);
   this.map.on('click', e=> this.getNearMarkers(e))
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(this.map);
  
   this.currentLayer=this.createLayer(this.allMarker,this.greenIcon)
-  this.myPos= new L.Marker(this.markMyPos)
+  this.myPos= new L.Marker(this.markMyPos, this.directionMarker,  {rotationAngle: 45})
   this.map.addLayer(this.myPos)
   this.map.addLayer(this.currentLayer) 
 
@@ -109,8 +137,9 @@ ngOnInit() {
 
    this._DataComponent.cast_geopositionIsActivated.subscribe(data=> this.showLocation=data )
 
- }
 
+
+}
 
 
 
@@ -135,19 +164,35 @@ getDataInView() {
       var _distance = nE.distanceTo(sW)
 
 
-    var width = _distance
+    var width = _distance/2
     var point = this.map.getCenter()
 
     this._DataComponent.fetchWikidata(width, point)
     }else(this.toHigh="in dieser Zoomstufe können keine Daten geladen werden")
+ 
+ //console.log(this.map.getCenter())
+localStorage.setItem("view",    JSON.stringify({"lat": this.map.getCenter().lat  ,"lng":this.map.getCenter().lng})    )
+
+
   }
 
 
+deleteData(){
+  this._DataComponent.storeEveryData=[]
+  this._DataComponent.editAllMarkerList([])
+  
+  localStorage.setItem("sd", JSON.stringify([]) )
+
+
+}
 
 
   zoomIn(){
     var zoom=this.map.getZoom()
      this.map.setZoom(zoom+1)
+
+
+
    }
 
    zoomOut(){
@@ -158,6 +203,7 @@ getDataInView() {
 
 
    showMyLocation(zommIntomyPos:boolean){
+
 
     var customOptions =
     {
@@ -187,8 +233,21 @@ getDataInView() {
      //alert("no position available")
 
    }}else{
-      alert("no position available")
+     // alert("no position available")
     }
+
+
+    var icon = L.divIcon({
+      iconSize: [31, 27],
+      iconAnchor: [13.5, 13.5],
+      popupAnchor: [0, -11],
+      className: 'rotated-markerdiv'
+  })
+
+
+
+
+
 
   }
 
@@ -204,6 +263,11 @@ createLayer(markerList:marker[],icon){
    //create a layer array with the Lat/lng infomation from the marker object
     var layer=[];
     markerList.forEach(element => {
+
+      
+        
+  
+
      var  newMarker=L.marker([element.lan,element.lat],{icon:icon})
      layer.push(newMarker);
     });
@@ -217,6 +281,7 @@ createLayer(markerList:marker[],icon){
    
 switchInfoOn(){
      this._MainFrameComponent.switchInfoPopUpIsHidde()
+     this._MainFrameComponent.submenueIsHidden=true
    }
 
 
@@ -267,6 +332,7 @@ getNearMarkers(e){
 
     if(markerListSelected.length!=0){
 
+      console.log(markerListSelected)
    this.switchInfoOn()}
 }
 

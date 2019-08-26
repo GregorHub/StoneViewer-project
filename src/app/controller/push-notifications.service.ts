@@ -14,13 +14,14 @@ export class PushNotificationsService {
    
    // Notification.requestPermission(function(result)  {})
 
-  
+
   }
 
 
     genratenote(text){
  
-      
+      //console.log("meh")
+
       navigator.serviceWorker.register('ngsw-worker.js');
       Notification.requestPermission(function(result) {
         if (result === 'granted') {

@@ -7,5 +7,5 @@ export interface marker {
   distance:number;
   nameForDisplay:string;
   wikiDataMeta:{}
-  osmMeta:{}
+  osmMeta:{ wikidata?:string}
 }

@@ -1,0 +1,63 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-04-12 09:51:41
+count workspace : c:\ANgularDevelopmentLab\StoneViewer\src\app
+total files : 51
+total code lines : 1728
+total comment lines : 210
+total blank lines : 820
+
+app-routing.module.ts, code is 8, comment is 0, blank is 2.
+app.component.html, code is 2, comment is 0, blank is 1.
+app.component.sass, code is 0, comment is 0, blank is 0.
+app.component.spec.ts, code is 31, comment is 0, blank is 4.
+app.component.ts, code is 10, comment is 0, blank is 6.
+app.module.ts, code is 58, comment is 3, blank is 13.
+components\info-dash-board\info-dash-board.component.html, code is 10, comment is 0, blank is 9.
+components\info-dash-board\info-dash-board.component.sass, code is 35, comment is 0, blank is 2.
+components\info-dash-board\info-dash-board.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\info-dash-board\info-dash-board.component.ts, code is 59, comment is 1, blank is 24.
+components\info-pop-up\info-pop-up.component.html, code is 32, comment is 0, blank is 35.
+components\info-pop-up\info-pop-up.component.sass, code is 98, comment is 0, blank is 16.
+components\info-pop-up\info-pop-up.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\info-pop-up\info-pop-up.component.ts, code is 124, comment is 9, blank is 65.
+components\main-frame\main-frame.component.html, code is 25, comment is 0, blank is 24.
+components\main-frame\main-frame.component.sass, code is 43, comment is 0, blank is 12.
+components\main-frame\main-frame.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\main-frame\main-frame.component.ts, code is 58, comment is 10, blank is 27.
+components\map-dialog\map-dialog.component.html, code is 7, comment is 0, blank is 5.
+components\map-dialog\map-dialog.component.sass, code is 37, comment is 0, blank is 3.
+components\map-dialog\map-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\map-dialog\map-dialog.component.ts, code is 177, comment is 13, blank is 88.
+components\notifications-dialog\notifications-dialog.component.html, code is 6, comment is 0, blank is 11.
+components\notifications-dialog\notifications-dialog.component.sass, code is 24, comment is 0, blank is 2.
+components\notifications-dialog\notifications-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\notifications-dialog\notifications-dialog.component.ts, code is 84, comment is 9, blank is 78.
+components\settings-dialog\settings-check-box\settings-check-box.component.html, code is 4, comment is 0, blank is 1.
+components\settings-dialog\settings-check-box\settings-check-box.component.sass, code is 38, comment is 60, blank is 2.
+components\settings-dialog\settings-check-box\settings-check-box.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\settings-dialog\settings-check-box\settings-check-box.component.ts, code is 20, comment is 0, blank is 6.
+components\settings-dialog\settings-dialog.component.html, code is 15, comment is 0, blank is 15.
+components\settings-dialog\settings-dialog.component.sass, code is 46, comment is 0, blank is 4.
+components\settings-dialog\settings-dialog.component.spec.ts, code is 20, comment is 0, blank is 5.
+components\settings-dialog\settings-dialog.component.ts, code is 44, comment is 0, blank is 32.
+controller\data\data.component.html, code is 0, comment is 0, blank is 0.
+controller\data\data.component.sass, code is 0, comment is 0, blank is 0.
+controller\data\data.component.spec.ts, code is 20, comment is 0, blank is 5.
+controller\data\data.component.ts, code is 256, comment is 65, blank is 156.
+controller\geoFunctions\geoFencing.ts, code is 31, comment is 0, blank is 26.
+controller\geoFunctions\geoposition.ts, code is 48, comment is 9, blank is 23.
+controller\http-controller.service.spec.ts, code is 9, comment is 0, blank is 3.
+controller\http-controller.service.ts, code is 29, comment is 6, blank is 27.
+controller\marker.ts, code is 10, comment is 0, blank is 1.
+controller\push-notifications.service.spec.ts, code is 9, comment is 0, blank is 3.
+controller\push-notifications.service.ts, code is 24, comment is 1, blank is 16.
+controller\pwa-service.service.spec.ts, code is 9, comment is 0, blank is 3.
+controller\pwa-service.service.ts, code is 16, comment is 0, blank is 10.
+controller\Settings\clusterSurname-settings.ts, code is 9, comment is 8, blank is 9.
+controller\Settings\geofencingn-settings.ts, code is 9, comment is 8, blank is 5.
+controller\Settings\geolocation-settings.ts, code is 10, comment is 8, blank is 9.
+controller\Settings\view.ts, code is 4, comment is 0, blank is 2.
+===============================================================================

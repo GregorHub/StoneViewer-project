@@ -1,8 +1,6 @@
 
 
-
 <div class="topBar">
-
 
   <div class="topTitle" >
       
@@ -11,7 +9,7 @@
   
   <div class="controlPanel" >
 
-    
+    <!--
 
       <td>
           <div class="noteBtnframe">
@@ -21,21 +19,41 @@
           </td>
           
    
-   
     <td>
   <div class="menuBtnFrame" > 
       <img class="imgControll" (click)="switchSettingsDisplay()" src="./assets/settings.png">
   </div>
 </td>
 
+-->
 
-
-
-
+<div  (click)="switchSubmenue()"  >
+    <div class="hammburger"  >
+        <div class="cheese" ></div>
+        <div class="cheese" ></div>
+        <div class="cheese" ></div>
+    </div>
+  
+</div>
 
 
 
 </div>
+  </div>
+
+  <div [hidden]="submenueIsHidden" class="submenu" >
+
+    <div class="grid-container">
+      <div class="grid-item"> <img class="imgControll" [hidden]="!NewNotifications" (click)="switchNotificationsDisplay()" src="./assets/newIcons/0560-binoculars2.png"> 
+        <img class="imgControll" [hidden]="NewNotifications" (click)="switchNotificationsDisplay()" src="./assets/bellActive.png"> </div>
+      <div class="grid-item">  <img class="imgControll" (click)="switchSettingsDisplay()" src="./assets/newIcons/0609-cogs.png"></div>
+      <div class="grid-item">  <img class="imgControll" (click)="switchHelpIsHidden()"  src="./assets/newIcons/1111-question4.png"></div>
+      <div class="grid-item">  <img class="imgControll"  src="./assets/newIcons/0069-camera.png"></div>
+      <div class="grid-item">  <img class="imgControll" (click)="switchGallerieIsHidden()" src="./assets/newIcons/0065-images3.png"></div>
+      <div class="grid-item">  <img class="imgControll" (click)="switchMapsettingsIsHidden()"  src="./assets/newIcons/0327-map2.png"></div>
+    </div>
+
+
   </div>
 
 <div class="maincontainer">
@@ -44,6 +62,9 @@
   <app-settings-dialog [hidden]="settingsIsHidden"  ></app-settings-dialog>
   <app-info-pop-up [hidden]="InfoPopUpIsHidde"  ></app-info-pop-up>
   <app-notifications-dialog [hidden]="NotificationsDialogIsHidden"  ></app-notifications-dialog>
-  <app-info-dash-board></app-info-dash-board>
+ <app-gallerie [hidden]="gallerieIsHidden"></app-gallerie>
+ <app-help  [hidden]="helpIsHidden" ></app-help>
+ <app-mapsettings [hidden]="mapsettingsIsHidden" ></app-mapsettings>
+
 
 </div> 

@@ -15,7 +15,8 @@ export class GeofencingnSettings {
      * @param {boolean} value
      */
 	public set $geofencing(value: boolean) {
-		this.geofencing = value;
+        this.geofencing = value;
+        localStorage.setItem('geofencing', String(value))
 	}
    
 

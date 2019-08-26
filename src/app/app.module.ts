@@ -23,7 +23,11 @@ import { Geofencing } from './controller/geoFunctions/geoFencing';
 import { NotificationsDialogComponent } from './components/notifications-dialog/notifications-dialog.component';
 import { PushNotificationsService } from './controller/push-notifications.service';
 import { InfoDashBoardComponent } from './components/info-dash-board/info-dash-board.component';
-
+import { HelpComponent } from './components/help/help.component';
+import { GallerieComponent } from './components/gallerie/gallerie.component';
+import { MapsettingsComponent } from './components/mapsettings/mapsettings.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,9 @@ import { InfoDashBoardComponent } from './components/info-dash-board/info-dash-b
     DataComponent,
     NotificationsDialogComponent,
     InfoDashBoardComponent,
+    HelpComponent,
+    GallerieComponent,
+    MapsettingsComponent,
 
 
   ],
@@ -47,10 +54,12 @@ import { InfoDashBoardComponent } from './components/info-dash-board/info-dash-b
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    MatDialogModule
     
 
   ],
-  providers: [PushNotificationsService,InfoPopUpComponent ,GeolocationSettings,GeofencingnSettings,Geoposition,clusterSurnameSettings,DataComponent,HttpControllerService,MapDialogComponent,MainFrameComponent,Geofencing, NotificationsDialogComponent ],
+  providers: [SettingsDialogComponent ,PushNotificationsService,InfoPopUpComponent ,GeolocationSettings,GeofencingnSettings,Geoposition,clusterSurnameSettings,DataComponent,HttpControllerService,MapDialogComponent,MainFrameComponent,Geofencing, NotificationsDialogComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

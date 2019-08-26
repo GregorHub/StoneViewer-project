@@ -1,0 +1,323 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "c:\\ANgularDevelopmentLab\\StoneViewer\\src\\app",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2019-04-12 09:51:41",
+            "filesum": 51,
+            "codesum": 1728,
+            "commentsum": 210,
+            "blanksum": 820,
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "app-routing.module.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "app.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "app.component.sass"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "app.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "app.component.ts"
+                },
+                {
+                    "blank": 13,
+                    "code": 58,
+                    "comment": 3,
+                    "filename": "app.module.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "components\\info-dash-board\\info-dash-board.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "components\\info-dash-board\\info-dash-board.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\info-dash-board\\info-dash-board.component.spec.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 59,
+                    "comment": 1,
+                    "filename": "components\\info-dash-board\\info-dash-board.component.ts"
+                },
+                {
+                    "blank": 35,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "components\\info-pop-up\\info-pop-up.component.html"
+                },
+                {
+                    "blank": 16,
+                    "code": 98,
+                    "comment": 0,
+                    "filename": "components\\info-pop-up\\info-pop-up.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\info-pop-up\\info-pop-up.component.spec.ts"
+                },
+                {
+                    "blank": 65,
+                    "code": 124,
+                    "comment": 9,
+                    "filename": "components\\info-pop-up\\info-pop-up.component.ts"
+                },
+                {
+                    "blank": 24,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "components\\main-frame\\main-frame.component.html"
+                },
+                {
+                    "blank": 12,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "components\\main-frame\\main-frame.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\main-frame\\main-frame.component.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 58,
+                    "comment": 10,
+                    "filename": "components\\main-frame\\main-frame.component.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "components\\map-dialog\\map-dialog.component.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "components\\map-dialog\\map-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\map-dialog\\map-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 88,
+                    "code": 177,
+                    "comment": 13,
+                    "filename": "components\\map-dialog\\map-dialog.component.ts"
+                },
+                {
+                    "blank": 11,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "components\\notifications-dialog\\notifications-dialog.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "components\\notifications-dialog\\notifications-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\notifications-dialog\\notifications-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 78,
+                    "code": 84,
+                    "comment": 9,
+                    "filename": "components\\notifications-dialog\\notifications-dialog.component.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-check-box\\settings-check-box.component.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 38,
+                    "comment": 60,
+                    "filename": "components\\settings-dialog\\settings-check-box\\settings-check-box.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-check-box\\settings-check-box.component.spec.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-check-box\\settings-check-box.component.ts"
+                },
+                {
+                    "blank": 15,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-dialog.component.html"
+                },
+                {
+                    "blank": 4,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-dialog.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-dialog.component.spec.ts"
+                },
+                {
+                    "blank": 32,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "components\\settings-dialog\\settings-dialog.component.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "controller\\data\\data.component.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "controller\\data\\data.component.sass"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "controller\\data\\data.component.spec.ts"
+                },
+                {
+                    "blank": 156,
+                    "code": 256,
+                    "comment": 65,
+                    "filename": "controller\\data\\data.component.ts"
+                },
+                {
+                    "blank": 26,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "controller\\geoFunctions\\geoFencing.ts"
+                },
+                {
+                    "blank": 23,
+                    "code": 48,
+                    "comment": 9,
+                    "filename": "controller\\geoFunctions\\geoposition.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "controller\\http-controller.service.spec.ts"
+                },
+                {
+                    "blank": 27,
+                    "code": 29,
+                    "comment": 6,
+                    "filename": "controller\\http-controller.service.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "controller\\marker.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "controller\\push-notifications.service.spec.ts"
+                },
+                {
+                    "blank": 16,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "controller\\push-notifications.service.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "controller\\pwa-service.service.spec.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "controller\\pwa-service.service.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "controller\\Settings\\clusterSurname-settings.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 8,
+                    "filename": "controller\\Settings\\geofencingn-settings.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 8,
+                    "filename": "controller\\Settings\\geolocation-settings.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "controller\\Settings\\view.ts"
+                }
+            ]
+        }
+    ]
+}

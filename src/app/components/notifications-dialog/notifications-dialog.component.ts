@@ -14,6 +14,7 @@ import {
 } from '@angular/core';
 import { view } from 'src/app/controller/Settings/view';
 import { BehaviorSubject } from 'rxjs';
+import { FormGroup, FormControl } from '@angular/forms';
 
 export interface PushNotification {
   body ? : string;
@@ -42,8 +43,59 @@ export interface PushNotification {
 
 
 export class NotificationsDialogComponent implements OnInit {
+
+
+
+  userSearch= new FormGroup({
+    searchValue: new FormControl()
+}); 
+
+onFormSubmit(): void {
+ 
+
+this.searchInObjects(this.userSearch.get('searchValue').value)
+
+} 
+
+searchInObjects( searchValue:string){
+console.log(searchValue)
+  if(searchValue!=" " && searchValue !=null ){
+
+  var i =""
+  this.searchResult=[]
+searchValue=searchValue.toLowerCase()
+
+
+//console.log(this.allSearchMarker)
+
+  this.allSearchMarker.forEach(element => {
+    element.nameForDisplay= this.infoPopUp.createDisplayName(element)
+
+i =element.nameForDisplay+""
+
+
+
+i=i.toLowerCase()
+
+  if(i!== null){
+    if(i.indexOf(searchValue)>-1){
+    this.searchResult.push(element)
+  }}
+  
+
+
+});
+    
+}
+    
+ 
+
+}
+
+allSearchMarker=[]
   positionLog=[]
   MyMarkers=[]
+  searchResult=[]
   MyPos={lat:0,lan:0};
   allMarker:marker[]=[]
   radarDist:number=300;
@@ -56,7 +108,19 @@ export class NotificationsDialogComponent implements OnInit {
 
   }
 
+
+  deleteSearch(){
+    console.log("search deltet triggert")
+
+    this.searchResult=[]
+    console.log(this.searchResult)
+  
+  }
+
   ngOnInit() {
+
+  
+
 //get the set distance for geofencing
     this._DataComponent.cast_geofencingIsActivated.subscribe(dist => this.radarDist=dist)
 
@@ -110,46 +174,32 @@ export class NotificationsDialogComponent implements OnInit {
     
     )
   
-  
+    this._DataComponent.cast_allMarkerList.subscribe(data => { 
+     // console.log(data)
+      this.allSearchMarker=data } )
+
   
   
   }
  
 
-    
 
-     
+  showOnMap(item:marker){
+
  
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      var newview:view={lanlat:[item.lan,item.lat],zoom:18}
+      this._DataComponent.editSwitchView(newview)
+      this.closeNotifications()
+    
 
   
-  showOnMap(item:marker){
-    var newview:view={lanlat:[item.lan,item.lat],zoom:18}
-    this._DataComponent.editSwitchView(newview)
-    this.closeNotifications()
   }
 
 
   closeNotifications(){
     this._mainframe.switchNotificationsDisplay()
+    this._mainframe.switchSubmenue()
   }
 
  

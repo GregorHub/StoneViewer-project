@@ -1,16 +1,19 @@
 .infoDiv
   position: absolute
-  left: 7%
+  left: 10%
   top: 2%
   z-index: 20004
-  height: 80%
-  width: 86%
-  background-image: linear-gradient(to bottom, rgba(56,173,169,0.9), rgba(39,121,118,0.99))
+  height: 75%
+  width: 75%
+  padding: 3px
+  //background-image: linear-gradient(to bottom, rgba(233,233,233,0.9), rgba(222,222,222,0.95))
+  background-color: rgba(240,240,240,0.9)
+  background-color: rgba(35,35,35,0.9)
   border-radius: 10px
   transition: 0.8s
-  color: black
+  color: whitesmoke
   font-size: 20px
-  font-family: Arial, Helvetica, sans-serif
+  font-family: simstdob
   line-height: 20px
 
 .innerFrame
@@ -33,13 +36,13 @@
   position: absolute
   right: 5px
   top: 5px
-  height: 40px
+  height: 25px
   color: black
   line-height: 30px
-  font-family: Arial, Helvetica, sans-serif
+  font-family: simstdob
   font-size: 25px
   z-index: 2000000
-  transform: rotate(-45deg)
+  filter: invert(1)
 
 .listBarFrame
   position: absolute
@@ -54,6 +57,7 @@
   padding-top: 5px
   height: 40px
   border-bottom: solid 1px rgba(61, 61, 61,0.4)
+  border-bottom: solid 1px rgba(244, 244, 244,0.4)
   overflow-x: auto
   white-space: nowrap
 
@@ -62,16 +66,14 @@
   position: absolute
   left: 5px
   top: 5px
-  height: 40px
+  height: 35px
   color: black
   line-height: 30px
-  font-family: Arial, Helvetica, sans-serif
+  font-family: simstdob
   font-size: 25px
   z-index: 2000000
-  -moz-transform: scale(-1, -1)
-  -o-transform: scale(-1, -1)
-  -webkit-transform: scale(-1, -1)
-  transform: scale(-1, -1)
+  filter: invert(1)
+
 
 .distText
   position: absolute

@@ -1,7 +1,7 @@
 <div  class="infoDiv">
                         
-  <img class="infoCloseBtn" (click)="closeInfo()" src=".././assets/0566-zoom-out2.png">
-  <img [hidden]="expandetInfoIsHidden" (click)="switchexpandetInfoIsHidden()"  class="backToListBtn" src=".././assets/leftBtn.png">
+  <img class="infoCloseBtn" (click)="closeInfo()" src="./assets/1133-cross.png">
+  <img [hidden]="expandetInfoIsHidden" (click)="switchexpandetInfoIsHidden()"  class="backToListBtn" src="./assets/0448-undo2.png">
 
 <div [hidden]="!expandetInfoIsHidden" class="listBarFrame">
   
@@ -10,7 +10,11 @@
 
 
 
-  <div  (click)="selectExtendetInfo(item)" > {{item.nameForDisplay}}    </div>
+  <div *ngIf="item.type=='OSM'"  (click)="selectExtendetInfo(item)" > {{item.nameForDisplay }}    </div>
+
+  <div *ngIf="item.type=='Wiki'"  > {{item.nameForDisplay | slice:25:100 }} </div>
+
+  <div *ngIf="item.type=='WikiandOsm'"  > {{item.nameForDisplay  }} </div>
 
 
   <div class="distText" *ngIf="this.DsiplaySum" > {{editedDistance[i]}}  </div>  
@@ -35,7 +39,9 @@
 </div>
 <div class="header"></div>
 <div class="textSection" >
-  Entfernung: {{expandetInfoMarker.distance}}m
+  Entfernung: {{expandetInfoMarker.distance}}m <br>
+  Quelle: {{expandetInfoMarker.type}}
+
 </div>
 
 
