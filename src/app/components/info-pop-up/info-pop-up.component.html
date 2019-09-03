@@ -1,6 +1,6 @@
 <div  class="infoDiv">
                         
-  <img class="infoCloseBtn" (click)="closeInfo()" src="./assets/1133-cross.png">
+  <img class="infoCloseBtn" (click)="closeInfo()" src="./assets/1114-plus.png">
   <img [hidden]="expandetInfoIsHidden" (click)="switchexpandetInfoIsHidden()"  class="backToListBtn" src="./assets/0448-undo2.png">
 
 <div [hidden]="!expandetInfoIsHidden" class="listBarFrame">
@@ -8,16 +8,29 @@
 
 <div *ngFor="let item of localSelectedMarker;let i = index"  class="listBar" (click)="switchexpandetInfoIsHidden()"  (click)="selectExtendetInfo(item)" >
 
+  <tr>
+    <td class="markerWrap" >
+    <!--  <div *ngIf="item.markedForWiMa" class="markerBall" ></div>
+      <div *ngIf="!item.markedForWiMa" class="noMarkerBall" ></div> -->
+      <div *ngIf="!item.markedForWiMa" class="noMarkerBall" ></div>
+      <img class="starPicList" *ngIf="item.markedForWiMa" src="./assets/0995-star-full.png" >
+     </td>
+    <td>
+
+      <div *ngIf="item.type=='OSM'"  (click)="selectExtendetInfo(item)" > {{item.nameForDisplay }}    </div>
+
+      <div *ngIf="item.type=='Wiki'"  > {{item.nameForDisplay | slice:25:100 }} </div>
+    
+      <div *ngIf="item.type=='WikiandOsm'"  > {{item.nameForDisplay  }} </div>
+    
+    
+    <!-- <div class="distText" *ngIf="this.DsiplaySum" > {{editedDistance[i]}}  </div> -->
+
+    </td>
+  </tr>
 
 
-  <div *ngIf="item.type=='OSM'"  (click)="selectExtendetInfo(item)" > {{item.nameForDisplay }}    </div>
 
-  <div *ngIf="item.type=='Wiki'"  > {{item.nameForDisplay | slice:25:100 }} </div>
-
-  <div *ngIf="item.type=='WikiandOsm'"  > {{item.nameForDisplay  }} </div>
-
-
-  <div class="distText" *ngIf="this.DsiplaySum" > {{editedDistance[i]}}  </div>  
 
 </div>
 
@@ -61,12 +74,41 @@
 
 
 
-<span class="showOnMap"  (click)="showOnMap()" >auf karte anzeigen</span>
+
+
+
+
+
+
 
 
 </div>
 
+
+
 </div>
+
+<div class="showOnMap" *ngIf="!expandetInfoIsHidden"  >
+    
+  
+  <div *ngIf="error"  class="error"> {{errorText}} </div>  
+
+<table style="width: 90%">
+    <tr *ngIf="!error"  >
+       <!--     <td> <div (click)="showOnMap(true)"  class="InfoButton" > mit Standort anzeigen </div>       </td>
+      <td>   <div  (click)="showOnMap(false)"  class="InfoButton" >Auf Karte anzeigen</div>    </td>-->
+
+         <td  >      <img (click)="showOnMap(false)"   class="starPicOff" src="./assets/0313-location.png" >   </td>
+         <td  >      <img (click)="showOnMap(true)"   class="starPicOff" src="./assets/0326-map.png" >   </td>
+        
+        
+         <td   *ngIf="expandetInfoMarker.markedForWiMa" >      <img  (click)="markAsWiMaStein()"  class="starPicOn" src="./assets/0995-star-full.png" >   </td>
+         <td *ngIf="!expandetInfoMarker.markedForWiMa" >    <img  (click)="markAsWiMaStein()"  class="starPicOff" src="./assets/0993-star-empty.png" >   </td>
+    </tr>
+  </table> 
+        
+    </div>
+
 
 </div>
 

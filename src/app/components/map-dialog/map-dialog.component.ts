@@ -32,6 +32,7 @@ toHigh=""
   currentLayer;
   clusterLAyer;
   circleMarker;
+  polyline;
   clusterArray:marker[]=[];
   showLocation:boolean=true;
 
@@ -46,8 +47,8 @@ toHigh=""
   });
   
 directionMarker = new L.Icon({
-      iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-      //iconUrl:"./assets/ori.png",
+      iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+     // iconUrl:"./assets/ori.png",
       //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
       iconSize: [25, 41],
       iconAnchor: [12, 41],
@@ -62,9 +63,46 @@ directionMarker = new L.Icon({
 
 
 setSelectedMarkerViewAndPolygon(view:view){
+
+
+
+      if(this.markMyPos.lat!=0 && view.relative==true){
+
+        this.map.fitBounds([
+          view.lanlat,
+           this.markMyPos
+       ] ,{padding:[50,50]} );
+     
+     
+      
+
+     //  this.map.setZoom(this.map.getZoom()-4)
+
+      
+       var latlngs = [
+        view.lanlat,
+        this.markMyPos
+ 
+    ];
+
+/**
+    if(this.polyline!=null){
+      this.map.removeLayer(this.polyline)
+    }
+
+   */ //this.polyline = L.polyline(latlngs, {color: 'blue'}).addTo(this.map)
+
+
+      }else{
+
      this.map.setView(view.lanlat,view.zoom)
+      }
+     
      this.map.removeLayer(this.circleMarker)
      this.circleMarker= L.circle([view.lanlat[0],view.lanlat[1]], {radius: 5}).addTo(this.map);
+
+
+
   }
 
 
@@ -74,8 +112,7 @@ ngOnInit() {
 
 
 
-
-  var view=[50.06021, 8.204]
+  var view=[50.00321311004287, 8.278057971037926]
 
 if(localStorage.getItem("view")!==null){
   view= JSON.parse( localStorage.getItem("view"))
@@ -83,7 +120,7 @@ if(localStorage.getItem("view")!==null){
 
   
 
-  this.map = L.map('map',{zoomControl: false}).setView(view, 8);
+  this.map = L.map('map',{zoomControl: false}).setView(view, 18);
   this.map.on('click', e=> this.getNearMarkers(e))
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -100,33 +137,61 @@ if(localStorage.getItem("view")!==null){
 
   this._DataComponent.cast_allMarkerList.subscribe(data=>{ 
   this.map.removeLayer(this.currentLayer)
-  
-
-
-
-
 
 
   this.currentLayer=this.createLayer(this.allMarker,this.greenIcon)
+
+  
+
+
   this.map.addLayer(this.currentLayer) 
   this.allreadyDisplayedMarker=data
+
+  if( this.allreadyDisplayedMarker[0] != undefined){ 
+    
+   
+  
+  }
   this.allreadyDisplayedMarker.forEach(item => { 
-      var  n =this.createMarker(item,this.greenIcon).addTo(this.currentLayer)
+
+
+if(item.markedForWiMa!=true){
+
+  var  n =this.createMarker(item,this.greenIcon).addTo(this.currentLayer)
+}
+
+
+
+      //var  n =this.createMarker(item,this.directionMarker).addTo(this.currentLayer)
+    
+
+     
 
       }
       
       )
-  
+
+      
+      this.allreadyDisplayedMarker.filter(element => {
+        if(element.markedForWiMa==true){
+          var n =this.createMarker(element,this.directionMarker).addTo(this.currentLayer)
+        }
+      } )
+    //  console.log( this.allreadyDisplayedMarker[0])
+    // if( this.allreadyDisplayedMarker[0] != undefined){   var m= this.createMarker( this.allreadyDisplayedMarker[0],this.directionMarker).addTo(this.currentLayer)}
+
 
    
 
    })
 
+  
+
    this.Geofencing.cast_geofencingBS.subscribe( data => {  this.showMyLocation(false) ;this._DataComponent.calcDist(this._DataComponent.storeEveryData)   })
 
-   this.map.setZoom(13)
-   this.getDataInView() 
-   this.map.setZoom(11)
+
+  this.getDataInView() 
+   this.map.setZoom(14)
    this._DataComponent.cast_switchView.subscribe(view =>{  this.setSelectedMarkerViewAndPolygon(view)   })
   this._DataComponent.cast_selectedMarker.subscribe(data =>  {
     if(data.name=="LocalChoosen"){
@@ -136,8 +201,6 @@ if(localStorage.getItem("view")!==null){
   })
 
    this._DataComponent.cast_geopositionIsActivated.subscribe(data=> this.showLocation=data )
-
-
 
 }
 
@@ -157,6 +220,8 @@ getDataInView() {
       var boundString: string = bounds._southWest.lat + "," + bounds._southWest.lng + "," + bounds._northEast.lat + "," + bounds._northEast.lng
       this._DataComponent.fetchOsm(boundString.toString())
 
+      console.log("meh")
+   console.log(boundString)
     
       var nE = bounds._northEast
       var sW=bounds._southWest
@@ -250,6 +315,8 @@ deleteData(){
 
 
   }
+
+
 
  createMarker(element:marker,icon){
   var newMarker= 

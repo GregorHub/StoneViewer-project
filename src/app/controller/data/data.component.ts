@@ -10,6 +10,7 @@ import { view } from '../Settings/view';
 import { isNgTemplate } from '@angular/compiler';
 import { NgxIndexedDB } from 'ngx-indexed-db';
 import { JsonPipe } from '@angular/common';
+import { element } from 'protractor';
 
 
 declare let L;
@@ -22,7 +23,7 @@ export class DataComponent  {
   //    49.9066     8.12649
  
   oldBounds;
-
+//  storeEveryData:marker[]=[];
 
 testStadeckn:marker[]=[
 
@@ -46,23 +47,31 @@ testStadeckn:marker[]=[
    }
 ]
 
+storeEveryData=this.testStadeckn
 
 //allFetchedData:marker[]=this.testStadeckn
 allFetchedData:marker[]=[]
+ view=[50.00321311004287, 8.278057971037926]
 
 
 constructor(private _HttpControllerService : HttpControllerService, private _geoposition: Geoposition  ) { 
 
+  //console.log("LocalsStorage")
 
- if (localStorage.getItem("sd")===null){
-  localStorage.setItem("sd", JSON.stringify(this.storeEveryData) )
+ if (localStorage.getItem("sd")===null ||  localStorage.getItem("sd")===undefined ){
+ localStorage.setItem("sd", JSON.stringify(this.storeEveryData) )
+
  }
 
-  var loacStorageStoredData = JSON.parse( localStorage.getItem("sd"))
 
+  var loacStorageStoredData =  JSON.parse( localStorage.getItem("sd"))
+this.newAllAmrker=loacStorageStoredData
 
 
  this.storeEveryData=loacStorageStoredData
+this.editAllMarkerList(this.storeEveryData)
+
+
 
  if( localStorage.getItem("geolocation")===null ) {
 
@@ -73,7 +82,10 @@ constructor(private _HttpControllerService : HttpControllerService, private _geo
 if( localStorage.getItem("geofencingRadar")===null ) {
 
   localStorage.setItem("geofenfingRadar","100")}
+ var view=[50.00321311004287, 8.278057971037926]
 
+ this.fetchWikidata(8000,{ lat: 50.00418190248367,  lng: 8.267083168029787})
+this.fetchOsm( [49.970876658194165,8.234252929687502,50.031122021389,8.296051025390627]  )
 }
 
 
@@ -91,7 +103,7 @@ if( localStorage.getItem("geofencingRadar")===null ) {
  * http://www.wikidata.org/entity/
  */
 
-storeEveryData:marker[]=this.testStadeckn
+
 
 
 
@@ -101,7 +113,7 @@ storeEveryData:marker[]=this.testStadeckn
 checkSameComponents(item:marker,element:marker){
  var tv:boolean=false
 
-
+  /*
 
   if(item.lan==element.lan){
     tv=true
@@ -110,9 +122,9 @@ checkSameComponents(item:marker,element:marker){
   if(item.lat==element.lat && item.lan==element.lan ){
     tv=true
   }
-
+*/
   
- if(element.osmMeta.wikidata !== undefined){ 
+ if(element.osmMeta.wikidata !== undefined && item.name!= element.name ){ 
  //console.log(item)
  var itemNameString:string =""+item.name
      itemNameString=itemNameString.slice(31)
@@ -122,7 +134,9 @@ var wikidataId: string= element.osmMeta.wikidata
 //console.log("a: " +itemNameString + "b: " + wikidataId)
 
     if(itemNameString===wikidataId){
-  //   console.log( item.name)    
+    //  console.log(itemNameString)
+    //  console.log(wikidataId)
+    // console.log( item.name)    
       tv=true
       }
  }
@@ -134,11 +148,74 @@ var wikidataId: string= element.osmMeta.wikidata
 
 
 
-
+newAllAmrker:marker[]=[]
 
 
 reciveNewData(markerList:marker[]){
 
+
+    markerList.forEach(element => {
+        if(this.newAllAmrker.find(e => e.name===element.name)){
+           //console.log("not in thzelist:")   
+           //console.log(element)
+        }else{
+      
+          this.newAllAmrker.push(element)
+        }
+    });
+
+   // console.log(this.newAllAmrker)
+
+    //finde same wikidata id
+    var dublicates=[]
+    this.newAllAmrker.forEach(element =>{
+
+      if(element.type=="OSM" && element.osmMeta.wikidata!= undefined){
+        //console.log(element.osmMeta.wikidata)
+
+
+     //   console.log(element)
+        var m:marker=  this.newAllAmrker.find( e =>  e.name.toString().slice(31) == element.osmMeta.wikidata)    
+        
+        if(m!=undefined){
+          element.wikiDataMeta=m.wikiDataMeta
+   /*
+          console.log("####################")
+          console.log("osm")
+          console.log(element)
+          console.log("wiki")
+          console.log(m)
+       
+          console.log("####################") */
+          dublicates.push(m)
+        }
+   
+
+        //element.wikiDataMeta=m.wikiDataMeta
+
+        
+   
+
+      }
+    })
+
+  
+     //   console.log(dublicates)
+
+     // console.log(this.newAllAmrker )
+
+dublicates.forEach(item => {
+  this.newAllAmrker= this.newAllAmrker.filter(obj => obj !== item)
+});
+       
+  
+    
+     //   console.log(this.newAllAmrker )
+
+
+// NEW DUBLICATE ///////////////////////////////////
+
+/*
   //console.log(this._geoposition.$geolocationPosition )
 
   markerList.forEach(element => {
@@ -184,8 +261,13 @@ var single=[]
 
             if(merge_item.lan==element.lan  ){
               isMerged==true
-            //  console.log("ismerged")
-            }  
+          //console.log("merged")
+             // console.log(merge_item)
+            }else{
+              isMerged=false
+            //  console.log("notmerged")
+            //  console.log(merge_item)
+            }
 
 
             
@@ -221,6 +303,7 @@ var single=[]
   for(var i =0 ;i<merge.length-1;i++){
 
       if(merge[i].lan==merge[i+1].lan ){
+        
         var  newSingle:marker={
           name:merge[i].name,
           lat:merge[i].lat,
@@ -229,13 +312,18 @@ var single=[]
           wikiDataMeta:merge[i].wikiDataMeta,
           osmMeta:merge[i].osmMeta,
           nameForDisplay:"" ,
-          distance:0
+          distance:0,
+      
+
          }
+        // console.log(merge[i].markedForWiMa)
 
          if(merge[i+1].type=="Wiki"){
             newSingle.wikiDataMeta=merge[i+1].wikiDataMeta
+  
          }else if(merge[i+1].type=="OSM"){
           newSingle.osmMeta=merge[i+1].osmMeta
+
          }
         single.push(newSingle)
       }
@@ -247,8 +335,19 @@ var single=[]
 
 this.storeEveryData=this.calcDist(this.storeEveryData)
 
+ 
 
- this.editAllMarkerList(this.storeEveryData)
+ // this.storeEveryData=this.storeEveryData.filter( element => element.distance<20000 )
+
+*/
+
+//new line
+//console.log(this.newAllAmrker)
+this.storeEveryData=this.newAllAmrker
+this.storeEveryData=this.calcDist(this.storeEveryData)
+this.editAllMarkerList(this.storeEveryData)
+
+//console.log(this.storeEveryData)
 
  localStorage.setItem("sd", JSON.stringify(this.storeEveryData) )
 
@@ -313,7 +412,7 @@ editSelectedMarkerlist(newSelectedMarkerList){
 }
 
 
-switchView=new BehaviorSubject <view>({lanlat:[0,0],zoom:1})
+switchView=new BehaviorSubject <view>({lanlat:[0,0],zoom:1,relative:false})
 cast_switchView=this.switchView.asObservable()
 editSwitchView(newView:view){
     this.switchView.next(newView)
@@ -393,7 +492,7 @@ fetchOsm(bounds){
      
      
      // this.editMarkerList(newMarkerList)
-
+    //  console.log(newMarkerList)
      this.reciveNewData(newMarkerList)
 
 
@@ -464,7 +563,7 @@ fetchWikidata(width,point){
     
   //    console.log(newMarkerList)
     
-  
+
   this.reciveNewData(newMarkerList)
   //!  this.editMarkerList(newMarkerList)
 

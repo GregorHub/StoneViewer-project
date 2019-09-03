@@ -5,6 +5,8 @@ import { DataComponent } from 'src/app/controller/data/data.component';
 import { marker } from 'src/app/controller/marker';
 import { view } from 'src/app/controller/Settings/view';
 import { DomSanitizer } from '@angular/platform-browser';
+import { GallerieComponent } from '../gallerie/gallerie.component';
+import { worker } from 'cluster';
 
 @Component({
   selector: 'app-info-pop-up',
@@ -21,12 +23,38 @@ export class InfoPopUpComponent implements OnInit {
   saveUrlImg={};
   wikiInsc=""
   osmInsc=""
+  error=false
+
+  WimaListe=[
+    "Clementine Strauß geb. Gernsheimer", // Clementine Strauss 
+    "http://www.wikidata.org/entity/Q62761011","Stolperstein dedicated to Thekla Hölzer","2985843339",// Thekla Hölzer      
+    "6588723742","Berta Bamberger" ,                             // Berta Bamberger
+    "http://www.wikidata.org/entity/Q60197130","Stolperstein dedicated to Anna Oppenheimer", "2985830695", // Anna Oppenheimer
+    "2985838958" , "Fanny Liesel Silber",//Fanny
+    "2985818726","Eduard Hirsch"  //Eduart Hirsch
+  ]
+
+  errorText: string;
+  wimaCounter: number;
+  wimaChallangeComplete=false;
+
   constructor(private  _MainFrameComponent:MainFrameComponent, private _MapDialogComponent:MapDialogComponent,private _DataComponent:DataComponent ,private _DomSanitizationService: DomSanitizer ) { }
 localSelectedMarker=[];
 editedDistance=[]
   ngOnInit() {
+
+
+
+    if(localStorage.getItem("wimaChallangeComplete")!=undefined){
+      this.wimaChallangeComplete=JSON.parse(localStorage.getItem("wimaChallangeComplete"))
+    }else{
+    localStorage.setItem("wimaChallangeComplete","false")
+    }
+
+
     this._DataComponent.selectedMarkerList.subscribe( data=>{
       
+     
       
       this.localSelectedMarker=data
       this.editedDistance=[]
@@ -79,14 +107,24 @@ editedDistance=[]
 
     } )
 
+this._DataComponent.cast_allMarkerList.subscribe( data => {
+    this.wimaCounter=0
+  data.forEach(element => {
+      if(element.markedForWiMa==true){
+        this.wimaCounter++;
+      }
+  });
 
+  console.log("WIMACOUNT:" + this.wimaCounter)
+
+} )
 
 
   }
 
 
-  showOnMap(){
-    var newview:view={lanlat:[this.expandetInfoMarker.lan,this.expandetInfoMarker.lat],zoom:18}
+  showOnMap(relative:boolean){
+    var newview:view={lanlat:[this.expandetInfoMarker.lan,this.expandetInfoMarker.lat],zoom:18,relative:relative}
     this._DataComponent.editSwitchView(newview)
 this._DataComponent.editSelectedMarker(this.expandetInfoMarker)
     this.closeInfo()
@@ -158,6 +196,8 @@ this.saveUrlImg=this._DomSanitizationService.bypassSecurityTrustUrl(this.expandP
 
 
 
+
+
   setTimeout(() =>{ 
     if(item.wikiDataMeta.pic!=undefined){
     this.expandPictureSrc=  item.wikiDataMeta.pic.value}
@@ -170,6 +210,82 @@ this.saveUrlImg=this._DomSanitizationService.bypassSecurityTrustUrl(this.expandP
 
 
 }
+
+
+markAsWiMaStein(){
+    
+//case wether this stone is in list or  not
+if( this.isWimaStone(this.expandetInfoMarker) ){
+  this.error=false
+//maybe calc dist ???
+//case for distanze
+this.wimaCounter=0
+this._DataComponent.storeEveryData.forEach(element => {
+    if(element.markedForWiMa==true){
+      this.wimaCounter++;
+    }
+});
+
+
+  if(this.expandetInfoMarker.distance<100  ){
+    this.expandetInfoMarker.markedForWiMa=true 
+    if(  this.wimaCounter==5 && this.wimaChallangeComplete==false   ){
+      
+    console.log("ACTIVE")
+      localStorage.setItem("wimaChallangeComplete","true")
+      this._MainFrameComponent.switchdialogBoxIsHidden()
+      this._MainFrameComponent.switchInfoPopUpIsHidde()
+      this.wimaChallangeComplete=true  
+    }
+
+  }else{
+    (async () => { 
+      this.error=true
+      this.errorText=" Sie sind zu weit von diesem Stolperstein entfernt um ihn zu markieren!"
+      await delay(3000);
+    
+      // Do something after
+      this.error=false
+    })();
+  }
+
+}else{
+ 
+
+ (async () => { 
+  this.error=true
+  this.errorText="Dieser Stein gehört nicht zur WiMa Aufgabe!"
+  await delay(3000);
+
+  // Do something after
+  this.error=false
+})();
+
+}
+
+//this._DataComponent.editAllMarkerList(this._DataComponent.storeEveryData)
+
+}
+
+isWimaStone(element){
+var tv:boolean=false
+
+if( this.WimaListe.includes(element.nameForDisplay)  || this.WimaListe.includes(  element.name.toString())   ){
+  tv=true
+}else(
+  tv=false
+)
+
+
+
+console.log(element)
+
+
+
+  return tv
+}
+
+
 
 safePic(){
 
@@ -195,4 +311,7 @@ safePic(){
  }
   
 
+}
+function delay(ms: number) {
+  return new Promise( resolve => setTimeout(resolve, ms) );
 }

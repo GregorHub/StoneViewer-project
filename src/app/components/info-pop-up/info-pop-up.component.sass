@@ -43,13 +43,14 @@
   font-size: 25px
   z-index: 2000000
   filter: invert(1)
+  transform: rotate(45deg)
 
 .listBarFrame
   position: absolute
   left: 5%
   top: 10%
-  width: 80%
-  height: 80%
+  width: 90%
+  height: 70%
   overflow: auto
 
 .listBar
@@ -111,6 +112,77 @@
 
 .showOnMap
   position: absolute
-  right: 5px
-  font-size: 16px
-  line-height: 20px
+  width: 100%
+  margin-left: 10%
+
+  //right: 0px
+  bottom: 30px
+  //font-size: 16px
+  //line-height: 20px
+
+
+
+.InfoButton
+  border: 0px solid red
+  width: 80%
+  height: 60px
+  line-height: 90%
+  font-size: 1rem
+  text-align: center
+  font-size-adjust: 0.58
+  //word-wrap: break-word
+
+
+.InfoButtonMarkiert
+  border: 0px solid red
+  color: yellow
+  width: 80%
+  height: 60px
+  line-height: 75%
+  font-size: 1rem
+  text-align: center
+  font-size-adjust: 0.58
+
+.error
+  color: #ff6161
+  width: 80%
+  height: 60px
+  text-align: center
+  font-size: 13px
+  transition: 0.8
+  z-index: 50000
+
+.markerBall
+  height: 12px
+  width: 12px
+  background-color:  yellow
+  border-radius: 50%
+  align-self: center
+
+.markerWrap
+  padding: 5px
+
+.noMarkerBall
+  height: 12px
+  width: 20px
+  background-color:  transparent
+  border-radius: 50%
+  align-self: center
+
+
+
+.starPicOn
+  position: relative
+  //bottom: -22px
+  width: 32px
+
+.starPicOff
+  position: relative
+  //bottom: -22px
+  width: 32px
+  filter: invert(1)
+
+
+.starPicList
+  width: 20px
+   vertical-align: middle

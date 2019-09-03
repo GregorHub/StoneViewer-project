@@ -3,6 +3,7 @@ import { DataComponent } from 'src/app/controller/data/data.component';
 import { marker } from 'src/app/controller/marker';
 import { view } from 'src/app/controller/Settings/view';
 import { Geofencing } from 'src/app/controller/geoFunctions/geoFencing';
+import { MapDialogComponent } from '../map-dialog/map-dialog.component';
 
 @Component({
   selector: 'app-info-dash-board',
@@ -16,7 +17,7 @@ export class InfoDashBoardComponent implements OnInit {
   localSelectedMarker;
   localChosenMarker;
   selcted=true
-  constructor( private _dataComponent : DataComponent, private _geofencing:Geofencing  ) { }
+  constructor( private _dataComponent : DataComponent, private _geofencing:Geofencing , private mapDialog:MapDialogComponent ) { }
 
   ngOnInit() {
     this._geofencing.cast_geofencingBS.subscribe( () =>{
@@ -62,19 +63,22 @@ this._dataComponent.cast_selectedMarker.subscribe(data=> {
 
 setView(){
   var item=this.localSelectedMarker
-  var newview:view={lanlat:[item.lan,item.lat],zoom:18}
+  var newview:view={lanlat:[item.lan,item.lat],zoom:18,relative:false}
   this._dataComponent.editSwitchView(newview)
 }
 
 setSelctedView(){
   var item=this.localChosenMarker
-  var newview:view={lanlat:[item.lan,item.lat],zoom:18}
+  var newview:view={lanlat:[item.lan,item.lat],zoom:18,relative:false}
   this._dataComponent.editSwitchView(newview)
 }
 
 closeSelcted(){
   this.selcted=false
 
+
+
+//this.mapDialog.map.removeLayer(this.mapDialog.polyline)
   var newMArker:marker=  { lat:0,    lan:0,    name:"LocalChoosen",  nameForDisplay:"",  osmMeta:{},  wikiDataMeta:{},  type:"",  distance:20   }
 
  this._dataComponent.editSelectedMarker(newMArker)

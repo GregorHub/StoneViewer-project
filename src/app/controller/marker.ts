@@ -8,4 +8,5 @@ export interface marker {
   nameForDisplay:string;
   wikiDataMeta:{}
   osmMeta:{ wikidata?:string}
+  markedForWiMa?:boolean
 }

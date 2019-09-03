@@ -1,9 +1,41 @@
 
 <div class="settingsDiv">
-    <img  class="closeSettingsBtn" (click)="closeGallerie()" src="./assets/0566-zoom-out2.png">
-  <p>
-    gallerie
-  </p>
-  <input type="file" accept="image/*" capture="camera" />
+    <img  class="closeSettingsBtn" (click)="closeGallerie()" src="./assets/1114-plus.png">
+
+    <div class="searchTitle" >Wissenschaftsmarkt <br> Challange</div>    
+    
+    <div class="foldersDesc" (click)="switchChallangeDesciption()" >  Aufgabe</div>
+
+<div class="folder" *ngIf="challangeDisc"  > 
+    Um bei der Aufgabe des I3 Mainz bei dem diesjährigen Wissenschaftsmarkt teilzunhemen müssen Sie sich die Aufgabenstellung am Stand abholen. <br>
+     <br> Ziel der Aufgabe ist es, bestimme Stolpersteine in Mainz zu suchen und diese zu besuchen. 
+     Wenn Sie diese Aufgabe erfüllen können Sie mit etwas Glück tolle Preise gewinnen!    </div> 
+    
+
+<div class="wicc" *ngIf="WiMaChallngeComplete" >AUFGABE ERFÜLLT!!!</div>
+
+
+
+<div class="results" >
+
+        <div class="foldersDesc" > Markierte  Stolpersteine</div>
+
+<div  class="item" *ngIf="selctedCompare.length==0" > Es wurden noche keine Stolpersteine markiert</div>
+
+<div  *ngFor="let element of localMarker" >
+
+    <div *ngIf="element.markedForWiMa" (click)="showOnMap(element)" class="item"  >       {{element.nameForDisplay}}</div>
+  </div>
+
+
+
+
+
+
+  <div *ngIf="selctedCompare.length > 0" (click)="deleteMarkedStones()" class="deleteMarked" > Markierungen löschen </div>
+
+ 
+</div>
+
 
 </div>

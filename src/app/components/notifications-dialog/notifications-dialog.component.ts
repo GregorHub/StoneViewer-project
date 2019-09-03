@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Geofencing } from 'src/app/controller/geoFunctions/geoFencing';
 import { MainFrameComponent } from '../main-frame/main-frame.component';
-import { NullViewportScroller } from '@angular/common/src/viewport_scroller';
+
 import { Geoposition } from 'src/app/controller/geoFunctions/geoposition';
 import { DataComponent } from 'src/app/controller/data/data.component';
 import { marker } from 'src/app/controller/marker';
@@ -15,6 +15,7 @@ import {
 import { view } from 'src/app/controller/Settings/view';
 import { BehaviorSubject } from 'rxjs';
 import { FormGroup, FormControl } from '@angular/forms';
+import { InfoDashBoardComponent } from '../info-dash-board/info-dash-board.component';
 
 export interface PushNotification {
   body ? : string;
@@ -102,7 +103,7 @@ allSearchMarker=[]
   noteIsAllwoed:boolean;
    dataNotes: Array < any >= [];
    notedStones=[];
-  constructor(private Geofencin:Geofencing , private _mainframe: MainFrameComponent , private _DataComponent:DataComponent , private infoPopUp : InfoPopUpComponent, private _notificationService:PushNotificationsService ) { 
+  constructor(private Geofencin:Geofencing , private _mainframe: MainFrameComponent , private _DataComponent:DataComponent , private infoPopUp : InfoPopUpComponent, private _notificationService:PushNotificationsService  ) { 
 
 
 
@@ -157,16 +158,15 @@ allSearchMarker=[]
 
       this.MyMarkers.forEach(element => {
       
-        if(this.notedStones.includes(element)===false && this._DataComponent.notificationIsActivated){
-            this._notificationService.genratenote(element.nameForDisplay)
+        if( (this.notedStones.includes(element) ==false )   && this._DataComponent.notificationIsActivated.value  ){
+
+
+          console.log(this.notedStones.includes(element))
+
+          //  this._notificationService.genratenote(element.nameForDisplay)
             this.notedStones.push(element)}
-            
       });
 
-
-      
-
-      //console.log(newpos)
 
 
     }
@@ -185,11 +185,15 @@ allSearchMarker=[]
 
 
   showOnMap(item:marker){
-
+   
  
 
-      var newview:view={lanlat:[item.lan,item.lat],zoom:18}
+      var newview:view={lanlat:[item.lan,item.lat],zoom:18,relative:false}
       this._DataComponent.editSwitchView(newview)
+
+
+      this._DataComponent.editSelectedMarker(item)
+
       this.closeNotifications()
     
 

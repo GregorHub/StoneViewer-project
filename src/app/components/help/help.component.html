@@ -1,9 +1,371 @@
 
 <div class="settingsDiv">
-  <img  class="closeSettingsBtn" (click)="closeHelp()" src="./assets/0566-zoom-out2.png">
+  <img  class="closeSettingsBtn" (click)="closeHelp()" src="./assets/1114-plus.png">
+  <div class="searchTitle" >Hilfe</div>    
   
-  <p>
-    help works!
-  </p>
+
+  
+<!--##########################################  FOLDER  ###############################################################-->
+<div class="foldersDesc" (click)="switchStoneFolder()" > Stolpersteine </div>
+<div class="folder" *ngIf="stoneFolder" > 
+
+    <div class=" helpitemBar " > 
+        <table>
+          <tr>
+            <img class="stonePic" src="./assets/Stolperstein_Else_Liebermann_von_Wahlendorf_Berlin_Budapester_Strasse.jpg" >
+          </tr>
+             <tr>
+              
+                <td>
+                    
+                      
+                        Die Stolpersteine sind ein Projekt des Künstlers Gunter Demnig, das
+                        im Jahr 1992 begann. Mit im Boden verlegten kleinen Gedenktafeln soll 
+                        an das Schicksal der Menschen erinnert werden, die in der Zeit des Nationalsozialismus
+                         (NS-Zeit) verfolgt, ermordet, deportiert, vertrieben oder in den Suizid getrieben wurden.
+                          Die quadratischen Messingtafeln mit abgerundeten Ecken und Kanten sind mit von Hand 
+                          eingeschlagenen Lettern beschriftet und werden von einem angegossenen Betonwürfel
+                           mit einer Kantenlänge von 96 × 96 und einer Höhe von 100 Millimetern getragen. 
+                           Sie werden meist vor den letzten frei gewählten Wohnhäusern der NS-Opfer niveaugleich
+                            in das Pflaster bzw. den Belag des jeweiligen Gehwegs eingelassen. Im Oktober 2018 
+                            verlegte Gunter Demnig in Frankfurt am Main den 70.000. Stein.
+                        Stolpersteine wurden nicht nur in Deutschland, sondern auch in 23 weiteren 
+                        europäischen Ländern verlegt. Die Stolpersteine sind das größte dezentrale
+                         Mahnmal der Welt. Die Marke Stolpersteine ist seit 2006 beim Deutschen Patent- 
+                         und Markenamt durch Gunter Demnig geschützt, seit 2013 auf europäischer Ebene
+                    <div class="source"  >Quelle: <a href="https://de.wikipedia.org/wiki/Stolpersteine">https://de.wikipedia.org/wiki/Stolpersteine</a>  </div>
+                    
+                </td>
+             </tr>
+        </table>
+     </div>
+
+
+  </div>
+<!--##########################################  END ###############################################################-->
+
+
+
+<!--##########################################  FOLDER  ###############################################################-->
+<div class="foldersDesc" (click)="switchMenuFolder()" > Menü </div>
+<div class="folder" *ngIf="menuFolder" > 
+
+
+  <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/2019-08-29 17_04_55-StoneViewer.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" > <h4> Menü </h4> <hr> Öffnet und schließt das Menü.   </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+
+   <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/newIcons/0560-binoculars2.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" > <h4> Suche </h4> <hr> Öffnet und schließt die Suchmaske. Hier können die bereits geladenen Stolpersteine Namensspezifisch durchsucht warden.    </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+   <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/newIcons/0609-cogs.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" > <h4> Einstellungen </h4> <hr> Öffnet und schließt die Einstellungen.   </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+   <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/newIcons/1111-question4.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" > <h4> Hilfe </h4> <hr> Öffnet und schließt die Hilfe.   </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+
+  </div>
+<!--##########################################  END ###############################################################-->
+
+
+<!--##########################################  FOLDER  ###############################################################-->
+  <div class="foldersDesc" (click)="switchIconFolder()" > Icons</div>
+<div class="folder" *ngIf="iconFolder" > 
+
+    <div class=" helpitemBar " > 
+        <table>
+             <tr>
+                <td>
+                    <img class="helpImg"  src="./assets/1114-plus.png" >  
+                </td>
+                <td>
+                    <div class="ImgDesc" >  <h4>Vergrößern </h4>  <hr> Vergrößert bei Betätigung die Kartenansicht.  </div>
+                </td>
+             </tr>
+        </table>
+     </div>
+
+
+     
+    <div class=" helpitemBar " > 
+        <table>
+             <tr>
+                <td>
+                    <img class="helpImg"  src="./assets/1115-minus.png" >  
+                </td>
+                <td>
+                    <div class="ImgDesc" >  <h4>Verkleinern </h4>  <hr> Verkleinert bei Betätigung die Kartenansicht.  </div>
+                </td>
+             </tr>
+        </table>
+     </div>
+
+     <div class=" helpitemBar " > 
+        <table>
+             <tr>
+                <td>
+                    <img class="helpImg"  src="./assets/0316-location4.png" >  
+                </td>
+                <td>
+                    <div class="ImgDesc" >  <h4> Position anzeigem </h4>  <hr> Zeigt bei Betätigung den eigenen Standpunkt auf der Karte an.  </div>
+                </td>
+             </tr>
+        </table>
+     </div>
+
+     <div class=" helpitemBar " > 
+            <table>
+                 <tr>
+                    <td>
+                        <img class="helpImg"  src="./assets/2019-08-29 22_56_30-StoneViewer.png" >  
+                    </td>
+                    <td>
+                        <div class="ImgDesc" >  <h4>Stolperstein </h4>  <hr> Markiert einen Stolperstein auf der Karte. Beim Anlicken erscheint eine Liste mit Stolpersteinen (siehe Bedienung/Stolpersteininfo). </div>
+                    </td>
+                 </tr>
+            </table>
+         </div>
+    
+         <div class=" helpitemBar " > 
+                <table>
+                     <tr>
+                        <td>
+                            <img class="helpImg"  src="./assets/2019-08-29 22_58_56-StoneViewer.png" >  
+                        </td>
+                        <td>
+                            <div class="ImgDesc" >  <h4>Markierter Stolperstein </h4>  <hr> Markiert einen, für den Wissenschaftsmarkt ausgewählten, Stolperstein auf der Karte. </div>
+                        </td>
+                     </tr>
+                </table>
+             </div>
+        
+
+  <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/0313-location.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" >  <h4>Stolperstein anzeigen </h4>  <hr> Zeigt bei Betätigung den gewählten Stolperstein auf der Karte in der größtmöglichen Vergrößerung. Der Stolperstein wird zudem ausgewählt und in der Distanzanzeige am unteren Bildrand angezeigt(siehe Bedienung/Distanzanzeige).  </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+
+
+   <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/0326-map.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" >  <h4> Karte anzeigen </h4>  <hr> Zeigt bei Betätigung den gewählten Stolperstein in einem Kartenausschnitt an, in welchem der eigenen Standpunkt mit eingeschlossen ist.  </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+
+
+   <div class=" helpitemBar " > 
+      <table>
+           <tr>
+              <td>
+                  <img class="helpImg"  src="./assets/0993-star-empty.png" >  
+              </td>
+              <td>
+                  <div class="ImgDesc" >  <h4> Für den Wissenschaftsmarkt markieren </h4>  <hr> Markiert bei Betätigung den Stolperstein, wenn dieser zu den Stolpersteinen für den Wissenschaftsmarkt gehört. Ein Stolperstein kann nur markiert werden, wenn man sich in unmittelbarer Nähe des Stolpersteines befindet.   </div>
+              </td>
+           </tr>
+      </table>
+   </div>
+
+   <div class=" helpitemBar " > 
+      <table>
+          <tr>
+             <td>
+                <img class="helpImg"  src="./assets/0995-star-full.png" >  
+            </td>
+            <td>
+                <div class="ImgDesc" > <h4>Favoritenstern </h4>  <hr> Zeigt, dass ein Stein für den Wissenschaftsmarkt markiert wurde. Markierte Steine können unter Menü/Wissenschaftsmarkt eingesehen werden.</div>
+            </td>
+          </tr>
+      </table>
+    </div>
+
+
+  </div>
+<!--##########################################  END ###############################################################-->
+
+
+
+
+
+<!--##########################################  FOLDER  ###############################################################-->
+<div class="foldersDesc" (click)="switchSettingsFolder()" > Einstellungen</div>
+<div class="folder" *ngIf="settingsFolder"  > 
+    <div class=" helpitemBar " > 
+        <table>
+            <tr>
+               
+              <td>
+                  <div class="ImgDesc" > <h4> Geolocation </h4>  <hr> 
+                        Steuert, ob Standortinformationen verwendent werden. 
+                        Vorrausetzung für das Verwenden des Standpunktes ist 
+                        die Aktivierung der GPS Funktion auf dem Gerät. Die Geoposition
+                        hängt dabei von dem gerätinternen GPS Empfänger ab. 
+                        Dieser liefert nur eine Genauigkeit von wenigen Metern, 
+                        und kann zudem in engen Häuserschluchten Fehler von mehrern 
+                        Metern aufweisen. Daher kann es vorkommen, das die ermittelte
+                        Geoposition und der reale Standort voneinander abweichen. </div>
+              </td>
+            </tr>
+        </table>
+      </div>
+  
+      <div class=" helpitemBar " > 
+          <table>
+              <tr>
+                 
+                <td>
+                    <div class="ImgDesc" > <h4> Benachrichtigungen </h4>  <hr>
+                         Steuert, ob die App Benachrichtigungen schickt. </div>
+                </td>
+              </tr>
+          </table>
+        </div>
+    
+        <div class=" helpitemBar " > 
+            <table>
+                <tr>
+                   
+                  <td>
+                      <div class="ImgDesc" > <h4> Umkreissuche für Benachrichtigungen </h4>  <hr> 
+                        Setzt die Distanz, in der Stolpersteine im Umkreis erkannt und der Benutzer über diese informiert wird </div>
+                  </td>
+                </tr>
+            </table>
+          </div>
+      
+
+          <div class=" helpitemBar " > 
+              <table>
+                  <tr>
+                     
+                    <td>
+                        <div class="ImgDesc" > <h4> Speicher leeren </h4>  <hr> 
+                            Entfernt die geladenen Stolpersteine aus dem lokalen Speicher der App.
+                            Eine hohe Anzahl von geladenen Stolpersteinen kann zu einer Verlangsamung der App führen. </div>
+                    </td>
+                  </tr>
+              </table>
+            </div>
+
+
+
+
+
+  </div>
+<!--##########################################  END ###############################################################-->
+
+
+
+
+<!--##########################################  FOLDER  ###############################################################-->
+<div class="foldersDesc" (click)="switchBedinungsFolder()" >   Bedienung</div>
+
+<div class="folder" *ngIf="bedienungFolder"  > 
+   
+  
+  <div class=" helpitemBar " > 
+        <table>
+            <tr>
+               
+              <td>
+                  <div class="ImgDesc" > <h4> Karte </h4>  <hr> 
+                    Die Karte kann mit den Steuerelementen am rechten Bildrand gesteuert werden.
+                    Beim Verschieben des Kartenausschnittes werden automatisch neue Stolpersteine geladen. </div>
+              </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class=" helpitemBar " > 
+            <table>
+                <tr>
+                   
+                  <td>
+                      <div class="ImgDesc" > <h4> Stolpersteininfo </h4>  <hr> 
+                        Wird ein Stolperstein angelickt, so wird eine Liste mit den
+                        angeklickten Stolpersteinen angezeigt. Wenn man auf ein Element
+                        der Liste klickt, so öffnet sich eine detaillierte Ansicht.
+                        In dieser kann man den Stein für den Wissenschftsmarkt 
+                        markieren und auf der Karte anzeigen.    </div>
+                  </td>
+                </tr>
+            </table>
+        </div>
+          
+
+    <div class=" helpitemBar " > 
+        <table>
+            <tr>
+               
+              <td>
+                  <div class="ImgDesc" > <h4> Distanzanzeige </h4>  <hr>
+                     Im unteren Bereich der Karte befindet sich die Schaltfläche Distanzanzeige, 
+                     die den ausgewählten Stolperstein und die Entfernung des Benutzers zu diesem anzeigt. 
+                     Betätigt man die Schaltfläche, so wird der Kartenausschnitt auf den Stolperstein verschoben.
+                     Ist kein Stolperstein ausgewählt so zeigt die Schaltfläche die Entfernung zum nächstegelegen Stein. </div>
+              </td>
+            </tr>
+        </table>
+    </div>
+      
+
+
+
+
+  </div>
+<!--##########################################  END ###############################################################-->
+
 
 </div>

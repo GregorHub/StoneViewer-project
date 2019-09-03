@@ -28,6 +28,7 @@ import { GallerieComponent } from './components/gallerie/gallerie.component';
 import { MapsettingsComponent } from './components/mapsettings/mapsettings.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
+import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     HelpComponent,
     GallerieComponent,
     MapsettingsComponent,
+    DialogBoxComponent,
 
 
   ],

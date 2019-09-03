@@ -85,12 +85,19 @@ changeNotification($event){
 
 deleteData(){
 
-  this._notificationsDialog.deleteSearch()
-  this._DataComponent.storeEveryData=[]
-  this._DataComponent.editAllMarkerList([])
-  
-  localStorage.setItem("sd", JSON.stringify([]) )
 
+  if (confirm('Wollen sie wirkliche die Geladenen Steine löschen? Dies entfernt auch die Markierten Steine!')) {
+    this._notificationsDialog.deleteSearch()
+    this._DataComponent.storeEveryData=[]
+    this._DataComponent.editAllMarkerList([])
+    
+    localStorage.setItem("sd", JSON.stringify([]) )
+  
+} else {
+    // Do nothing!
+}
+
+  
 
 }
 

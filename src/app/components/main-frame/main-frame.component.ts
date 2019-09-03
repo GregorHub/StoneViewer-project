@@ -25,29 +25,20 @@ export class MainFrameComponent implements OnInit {
 
   ngOnInit() {
 
-  
-
-
-
-  
 
   }
-
-
-
-
 
 
 settingsIsHidden=true;
 mapIsHidden=false;
 InfoPopUpIsHidde=true;
-NotificationsDialogIsHidden=false;
+NotificationsDialogIsHidden=true;
 NewNotifications=true;
 submenueIsHidden=true;
 helpIsHidden=true;
-gallerieIsHidden=true;
+gallerieIsHidden=false;
 mapsettingsIsHidden=true;
-
+dialogBoxIsHidden=true;
 
 switchMapsettingsIsHidden(){
 
@@ -151,6 +142,16 @@ switchInfoPopUpIsHidde(){
 }
 }
   
+
+switchdialogBoxIsHidden(){
+
+  if(this.dialogBoxIsHidden==true){
+    this.dialogBoxIsHidden=false;
+  }else{
+    this.dialogBoxIsHidden=true;
+  }
+  }
+
 
 
 
